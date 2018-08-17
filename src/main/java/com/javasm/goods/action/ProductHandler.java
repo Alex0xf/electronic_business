@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("/product")
+@RequestMapping("/goods")
 public class ProductHandler {
     Logger log = LogManager.getLogger(ProductHandler.class);
 
     @Autowired
     IProductService productService;
 
-    @RequestMapping("index")
+    @RequestMapping("first_product")
     public String jumpIndexPage(Model model) {
         log.debug("Debug日志测试");
         log.info("info级别的日志");
@@ -27,7 +27,7 @@ public class ProductHandler {
         List<FirstProduct> firstProductList = productService.selectProductList();
         model.addAttribute("productsList", firstProductList);
 
-        return "goods/index";
+        return "goods/first_product";
     }
 
 }
