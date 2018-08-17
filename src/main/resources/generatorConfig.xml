@@ -10,27 +10,27 @@
 			<property name="suppressAllComments" value="true"/>
 		</commentGenerator>
 		<!-- 数据库连接 -->
-		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.14.252/test" userId="root" password="xiafei">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.14.252/electronic_business" userId="root" password="xiafei">
 		</jdbcConnection>
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false"/>
 		</javaTypeResolver>
 		<!-- 生成实体 -->
-		<javaModelGenerator targetPackage="com.javasm.book.model" targetProject="src/main/java">
+		<javaModelGenerator targetPackage="com.javasm.goods.model" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true"/>
 			<!-- 设置是否在getter方法中，对String类型字段调用trim()方法 -->
        	 	<property name="trimStrings" value="true"/>
 		</javaModelGenerator>
 		<!-- 生成mapper -->
-		<sqlMapGenerator targetPackage="com.javasm.book.mapper" targetProject="src/main/java">
+		<sqlMapGenerator targetPackage="com.javasm.goods.mapper" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true"/>
 		</sqlMapGenerator>
 		<!-- 生成dao接口 -->
-		<javaClientGenerator type="XMLMAPPER" targetPackage="com.javasm.book.dao" targetProject="src/main/java">
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.javasm.goods.dao" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true"/>
 		</javaClientGenerator>
 		<!-- 要生成哪些表 -->
-		<table tableName="pn_book" domainObjectName="Book" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
-
+		<table tableName="t_first_product" domainObjectName="FirstProduct" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+		<table tableName="t_goodsBrand" domainObjectName="GoodsBrand" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
 	</context>
 </generatorConfiguration>
