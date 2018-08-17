@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+	<!-- 引入配置文件 两种引入配置文件的方式  在mybatis文件中一块配了-->
+<!-- <context:property-placeholder location="classpath:spring-redis.properties"/>-->
+	 <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:spring-redis.properties</value>
+			</list>
+		</property>
+	<!--	外部配置文件 数据出错  保证代码继续运行-->
+		<property name="ignoreUnresolvablePlaceholders" value="true"></property>
+	</bean>
+
+	<!-- 自动扫描的包名 -->
+	<context:component-scan base-package="com.javasm.redis" />
+	
+	<!-- 需要jedisPoolConfig -->
+	<!-- Redis连接池信息,采用非阻塞多路复用 -->
+	<bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<!-- 最小空闲连接数, 默认0 -->
+		<property name="minIdle" value="${redis.minIdle}" />
+		<!-- 最大空闲连接数 -->
+		<property name="maxIdle" value="${redis.maxIdle}" />
+		<!-- 最大连接数 -->
+		<property name="maxTotal" value="${redis.maxTotal}" />
+		<!-- 最长等待时间 -->
+		<property name="maxWaitMillis" value="${redis.maxWaitMillis}" />
+		<!-- 在获取连接的时候检查有效性, 默认false -->
+		<property name="testOnBorrow" value="${redis.testOnBorrow}" />
+		<!-- 连接耗尽时是否阻塞, false报异常,ture阻塞直到超时, 默认true -->
+		<property name="blockWhenExhausted" value="${redis.blockWhenExhausted}" />
+	</bean>
+	
+	<!-- 需要ShardedJedisPool -->
+	<bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool">
+		<constructor-arg index="0" ref="poolConfig"></constructor-arg>
+		<constructor-arg index="1">
+			<list>
+			<!-- list的bean也可以写外面然后引入 这里用直接写里面的方法 -->
+				<bean class="redis.clients.jedis.JedisShardInfo">
+					<constructor-arg name="host" 
+					value="redis://:${redis.pwd}@${redis.host}:${redis.port}/${redis.db}"></constructor-arg>
+				</bean>
+				<bean class="redis.clients.jedis.JedisShardInfo">
+					<constructor-arg name="host" 
+					value="redis://:${redis.pwd}@${redis.host}:${redis.port}/${redis.db}"></constructor-arg>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>

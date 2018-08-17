@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+<!-- 读取配置文件  基于占位符方式 配置单个properties-->
+<!-- <context:property-placeholder location="classpath:jdbc.properties"/> -->
+<!-- 基于占位符方式 配置多个properties java代码中可以通过@value{jdbc.url}注解直接获取jdbc.properties文件中的值注入 private String url;  -->
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			<!--	<value>classpath:spring-redis.properties</value>-->
+			</list>
+		</property>
+		<!-- 外部配置文件 数据出错  保证代码继续运行 -->
+		<property name="ignoreUnresolvablePlaceholders" value="true"></property>
+	</bean>
+	
+ <!--基于SpEL表达式 配置多个properties id值为configProperties 提供java代码中使用  @Value("#{configProperties['jdbc.username']}") -->
+   <!--  <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:/conf/jdbc.properties</value>
+            </list>
+        </property>
+    </bean> -->
+
+    <!--基于SpEL表达式 配置单个properties -->
+    <!--<util:properties id="configProperties" location="classpath:conf/jdbc.properties"/>-->
+
+<!-- 数据库连接池 -->
+<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="driverClassName" value="${jdbc.driver}"></property>
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+<!-- 配置SqlSessionFactory -->
+<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<property name="dataSource" ref="dataSource"></property>
+	<property name="mapperLocations">
+		<value>classpath:com/javasm/*/mapper/*.xml</value>
+	</property>
+	<!-- 如果要配置其他复杂的mybatis属性 可以单独写一个mybatis.xml 再按下面格式引入 -->
+	<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+	<!-- 配置分页插件 -->
+		<property name="plugins">
+			<array>
+				<bean class="com.github.pagehelper.PageInterceptor">
+					<property name="properties">
+						<!-- 分页参数合理化 -->
+						<value>reasonable=true</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+</bean>
+<!-- mapper注入到Spring容器中 -->
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" p:basePackage="com.javasm.*.dao" p:sqlSessionFactoryBeanName="sessionFactory"></bean>
+
+<!-- Spring管理事务 -->
+<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<property name="dataSource" ref="dataSource"></property>
+</bean>
+<!-- 声明事物的过滤/生效规则 -->	
+<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!-- 所有add开头的方法 -->
+			<tx:method name="add*" propagation="REQUIRED"/>
+			<tx:method name="save*" propagation="REQUIRED"/>
+			<tx:method name="insert*" propagation="REQUIRED"/>
+			<tx:method name="update*" propagation="REQUIRED"/>
+			<tx:method name="delete*" propagation="REQUIRED"/>
+			<!-- 查询 -->
+			<tx:method name="find*" propagation="REQUIRED" read-only="true"/>
+			<tx:method name="select*" propagation="REQUIRED" read-only="true"/>
+			<tx:method name="*List" propagation="REQUIRED" read-only="true"/>
+			<!-- 声明回滚 -->
+			<tx:method name="*" rollback-for="Exception"/>
+		</tx:attributes>
+</tx:advice>
+<!-- 自动装配事物  必须放在<tx:advice>下方-->
+<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+<!-- 配置切面 把事物织入Service层 -->
+<aop:config>
+	<!-- com.javasm.user.service.IUserService.add -->
+	<aop:pointcut expression="execution(* com.javasm.*.service.*.*(..))" id="txPoint"/>
+	<!-- 事务切入点 -->
+	<aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
+</aop:config>
+
+</beans>

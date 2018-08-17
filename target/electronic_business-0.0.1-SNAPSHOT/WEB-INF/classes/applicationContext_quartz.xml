@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 一个定时任务/调度 定是去做一件事 也可以用注解的方式注入-->
+	<bean id="testjob" class="com.javasm.timmer.MyJob"></bean>
+	<!-- 配置任务 执行testjob里的方法 -->
+	<bean id="testJobInvoking" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<!-- 目标类 上面注入的bean -->
+		<property name="targetObject" ref="testjob"></property>
+		<!-- 执行目标类的哪个方法 -->
+		<property name="targetMethod" value="doJob"></property>
+		<!-- 定时任务 不并发执行 -->
+		<property name="concurrent" value="false"></property>
+	</bean>
+	<!-- 任务调度执行规则 -->		
+	<bean id="testJobInvodingCron" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="testJobInvoking"></property>
+		<property name="cronExpression" value="0/50 * * * * ?"></property>
+	</bean>
+	
+	<!-- 正式执行的代码 实际new的SchedulerFactoryBean -->
+	<!-- 注册需要运行的任务调度 -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<!-- 传的参数triggers 值是testJobInvodingCron -->
+		<property name="triggers">
+			<list>
+				<ref bean="testJobInvodingCron"/>
+			</list>
+		</property>
+	</bean>
+</beans>
