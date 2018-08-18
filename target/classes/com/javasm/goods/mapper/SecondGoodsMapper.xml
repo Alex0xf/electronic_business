@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javasm.goods.dao.SecondGoodsMapper" >
+  <resultMap id="BaseResultMap" type="com.javasm.goods.model.SecondGoods" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="goods_name" property="goodsName" jdbcType="VARCHAR" />
+    <result column="num" property="num" jdbcType="INTEGER" />
+    <result column="goods_tid" property="goodsTid" jdbcType="INTEGER" />
+    <result column="goods_bid" property="goodsBid" jdbcType="INTEGER" />
+    <result column="color" property="color" jdbcType="VARCHAR" />
+    <result column="buy_price" property="buyPrice" jdbcType="DOUBLE" />
+    <result column="sales_price" property="salesPrice" jdbcType="DOUBLE" />
+    <result column="is_buy" property="isBuy" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, goods_name, num, goods_tid, goods_bid, color, buy_price, sales_price, is_buy
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_second_goods
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_second_goods
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.javasm.goods.model.SecondGoods" >
+    insert into t_second_goods (id, goods_name, num, 
+      goods_tid, goods_bid, color, 
+      buy_price, sales_price, is_buy
+      )
+    values (#{id,jdbcType=INTEGER}, #{goodsName,jdbcType=VARCHAR}, #{num,jdbcType=INTEGER}, 
+      #{goodsTid,jdbcType=INTEGER}, #{goodsBid,jdbcType=INTEGER}, #{color,jdbcType=VARCHAR}, 
+      #{buyPrice,jdbcType=DOUBLE}, #{salesPrice,jdbcType=DOUBLE}, #{isBuy,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.javasm.goods.model.SecondGoods" >
+    insert into t_second_goods
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="goodsName != null" >
+        goods_name,
+      </if>
+      <if test="num != null" >
+        num,
+      </if>
+      <if test="goodsTid != null" >
+        goods_tid,
+      </if>
+      <if test="goodsBid != null" >
+        goods_bid,
+      </if>
+      <if test="color != null" >
+        color,
+      </if>
+      <if test="buyPrice != null" >
+        buy_price,
+      </if>
+      <if test="salesPrice != null" >
+        sales_price,
+      </if>
+      <if test="isBuy != null" >
+        is_buy,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="goodsName != null" >
+        #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="num != null" >
+        #{num,jdbcType=INTEGER},
+      </if>
+      <if test="goodsTid != null" >
+        #{goodsTid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsBid != null" >
+        #{goodsBid,jdbcType=INTEGER},
+      </if>
+      <if test="color != null" >
+        #{color,jdbcType=VARCHAR},
+      </if>
+      <if test="buyPrice != null" >
+        #{buyPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="salesPrice != null" >
+        #{salesPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="isBuy != null" >
+        #{isBuy,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.javasm.goods.model.SecondGoods" >
+    update t_second_goods
+    <set >
+      <if test="goodsName != null" >
+        goods_name = #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="num != null" >
+        num = #{num,jdbcType=INTEGER},
+      </if>
+      <if test="goodsTid != null" >
+        goods_tid = #{goodsTid,jdbcType=INTEGER},
+      </if>
+      <if test="goodsBid != null" >
+        goods_bid = #{goodsBid,jdbcType=INTEGER},
+      </if>
+      <if test="color != null" >
+        color = #{color,jdbcType=VARCHAR},
+      </if>
+      <if test="buyPrice != null" >
+        buy_price = #{buyPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="salesPrice != null" >
+        sales_price = #{salesPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="isBuy != null" >
+        is_buy = #{isBuy,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.javasm.goods.model.SecondGoods" >
+    update t_second_goods
+    set goods_name = #{goodsName,jdbcType=VARCHAR},
+      num = #{num,jdbcType=INTEGER},
+      goods_tid = #{goodsTid,jdbcType=INTEGER},
+      goods_bid = #{goodsBid,jdbcType=INTEGER},
+      color = #{color,jdbcType=VARCHAR},
+      buy_price = #{buyPrice,jdbcType=DOUBLE},
+      sales_price = #{salesPrice,jdbcType=DOUBLE},
+      is_buy = #{isBuy,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -4,9 +4,11 @@
   <resultMap id="BaseResultMap" type="com.javasm.goods.model.GoodsBrand" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="brand_name" property="brandName" jdbcType="VARCHAR" />
+    <result column="brand_address" property="brandAddress" jdbcType="VARCHAR" />
+    <result column="brand_describe" property="brandDescribe" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, brand_name
+    id, brand_name, brand_address, brand_describe
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -19,8 +21,10 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.javasm.goods.model.GoodsBrand" >
-    insert into t_goodsbrand (id, brand_name)
-    values (#{id,jdbcType=INTEGER}, #{brandName,jdbcType=VARCHAR})
+    insert into t_goodsbrand (id, brand_name, brand_address, 
+      brand_describe)
+    values (#{id,jdbcType=INTEGER}, #{brandName,jdbcType=VARCHAR}, #{brandAddress,jdbcType=VARCHAR}, 
+      #{brandDescribe,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.javasm.goods.model.GoodsBrand" >
     insert into t_goodsbrand
@@ -31,6 +35,12 @@
       <if test="brandName != null" >
         brand_name,
       </if>
+      <if test="brandAddress != null" >
+        brand_address,
+      </if>
+      <if test="brandDescribe != null" >
+        brand_describe,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -38,6 +48,12 @@
       </if>
       <if test="brandName != null" >
         #{brandName,jdbcType=VARCHAR},
+      </if>
+      <if test="brandAddress != null" >
+        #{brandAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="brandDescribe != null" >
+        #{brandDescribe,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -47,12 +63,20 @@
       <if test="brandName != null" >
         brand_name = #{brandName,jdbcType=VARCHAR},
       </if>
+      <if test="brandAddress != null" >
+        brand_address = #{brandAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="brandDescribe != null" >
+        brand_describe = #{brandDescribe,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.javasm.goods.model.GoodsBrand" >
     update t_goodsbrand
-    set brand_name = #{brandName,jdbcType=VARCHAR}
+    set brand_name = #{brandName,jdbcType=VARCHAR},
+      brand_address = #{brandAddress,jdbcType=VARCHAR},
+      brand_describe = #{brandDescribe,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

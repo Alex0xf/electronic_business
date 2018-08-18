@@ -3,13 +3,13 @@
 <mapper namespace="com.javasm.goods.dao.FirstProductMapper" >
   <resultMap id="BaseResultMap" type="com.javasm.goods.model.FirstProduct" >
     <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="classify" property="classify" jdbcType="VARCHAR" />
+    <result column="type_name" property="typeName" jdbcType="VARCHAR" />
     <result column="bid" property="bid" jdbcType="INTEGER" />
     <result column="color" property="color" jdbcType="VARCHAR" />
     <result column="type" property="type" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, classify, bid, color, type
+    id, type_name, bid, color, type
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -22,9 +22,9 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.javasm.goods.model.FirstProduct" >
-    insert into t_first_product (id, classify, bid, 
+    insert into t_first_product (id, type_name, bid, 
       color, type)
-    values (#{id,jdbcType=INTEGER}, #{classify,jdbcType=VARCHAR}, #{bid,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{typeName,jdbcType=VARCHAR}, #{bid,jdbcType=INTEGER}, 
       #{color,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.javasm.goods.model.FirstProduct" >
@@ -33,8 +33,8 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="classify != null" >
-        classify,
+      <if test="typeName != null" >
+        type_name,
       </if>
       <if test="bid != null" >
         bid,
@@ -50,8 +50,8 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="classify != null" >
-        #{classify,jdbcType=VARCHAR},
+      <if test="typeName != null" >
+        #{typeName,jdbcType=VARCHAR},
       </if>
       <if test="bid != null" >
         #{bid,jdbcType=INTEGER},
@@ -67,8 +67,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.javasm.goods.model.FirstProduct" >
     update t_first_product
     <set >
-      <if test="classify != null" >
-        classify = #{classify,jdbcType=VARCHAR},
+      <if test="typeName != null" >
+        type_name = #{typeName,jdbcType=VARCHAR},
       </if>
       <if test="bid != null" >
         bid = #{bid,jdbcType=INTEGER},
@@ -84,7 +84,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.javasm.goods.model.FirstProduct" >
     update t_first_product
-    set classify = #{classify,jdbcType=VARCHAR},
+    set type_name = #{typeName,jdbcType=VARCHAR},
       bid = #{bid,jdbcType=INTEGER},
       color = #{color,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR}
@@ -92,6 +92,6 @@
   </update>
 
   <select id="selectProductList" resultMap="BaseResultMap">
-    select * from t_first_product;
+    select * from t_first_product
   </select>
 </mapper>

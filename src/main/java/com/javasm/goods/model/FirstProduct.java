@@ -3,7 +3,7 @@ package com.javasm.goods.model;
 public class FirstProduct {
     private Integer id;
 
-    private String classify;
+    private String typeName;
 
     private Integer bid;
 
@@ -15,7 +15,7 @@ public class FirstProduct {
     public String toString() {
         return "FirstProduct{" +
                 "id=" + id +
-                ", classify='" + classify + '\'' +
+                ", typeName='" + typeName + '\'' +
                 ", bid=" + bid +
                 ", color='" + color + '\'' +
                 ", type='" + type + '\'' +
@@ -30,12 +30,12 @@ public class FirstProduct {
         this.id = id;
     }
 
-    public String getClassify() {
-        return classify;
+    public String getTypeName() {
+        return typeName;
     }
 
-    public void setClassify(String classify) {
-        this.classify = classify == null ? null : classify.trim();
+    public void setTypeName(String typeName) {
+        this.typeName = typeName == null ? null : typeName.trim();
     }
 
     public Integer getBid() {

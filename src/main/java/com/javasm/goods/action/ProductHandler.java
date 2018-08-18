@@ -26,7 +26,6 @@ public class ProductHandler {
         log.error("error级别日志");
         List<FirstProduct> firstProductList = productService.selectProductList();
         model.addAttribute("productsList", firstProductList);
-
         return "goods/first_product";
     }
 
