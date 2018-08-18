@@ -41,6 +41,7 @@
 	<mvc:resources location="/static/js/" mapping="/js/**/"></mvc:resources>
 	<mvc:resources location="/static/images/" mapping="/images/**/"></mvc:resources>
 	<mvc:resources location="/static/fonts/" mapping="/font/**/"></mvc:resources>
+
 	<!-- 文件上传的配置 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<!-- 允许上传的文件大小 -->
