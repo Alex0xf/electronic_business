@@ -186,10 +186,14 @@
 </div>
 <script src="/layui/js/layui.js"></script>
 <script>
-    //JavaScript代码区域
-    layui.use('element', function () {
-        var element = layui.element;
+    //把需要用到的模块先加载
+    layui.use(['layer', 'form', 'element'], function(){
+        var layer = layui.layer
+            ,form = layui.form//只有执行了这一步，部分表单元素才会自动修饰成功
+            ,element = layui.element;
+        //JavaScript代码区域
 
+        form.render();//动态生成的表单还需
     });
 
 </script>

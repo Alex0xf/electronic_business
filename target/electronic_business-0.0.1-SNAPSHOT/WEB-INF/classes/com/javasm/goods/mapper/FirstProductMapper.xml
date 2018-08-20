@@ -7,7 +7,15 @@
     <result column="bid" property="bid" jdbcType="INTEGER" />
     <result column="color" property="color" jdbcType="VARCHAR" />
     <result column="type" property="type" jdbcType="VARCHAR" />
+    <association property="goodsBrand" javaType="com.javasm.goods.model.GoodsBrand"
+                 resultMap="com.javasm.goods.dao.GoodsBrandMapper.BaseResultMap"></association>
   </resultMap>
+
+  <!--<resultMap id="firstProductMap" type="com.javasm.goods.modelFirstProduct" extends="BaseResultMap">
+    <association property="goodsBrand" javaType="com.javasm.goods.model.GoodsBrand"
+                 resultMap="com.javasm.goods.dao.GoodsBrandMapper.BaseResultMap"></association>
+  </resultMap>-->
+
   <sql id="Base_Column_List" >
     id, type_name, bid, color, type
   </sql>

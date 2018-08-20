@@ -1,6 +1,8 @@
 package com.javasm.goods.action;
 
+import com.javasm.goods.model.FirstGoods;
 import com.javasm.goods.model.FirstProduct;
+import com.javasm.goods.service.IFirstGoodsService;
 import com.javasm.goods.service.IProductService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,10 +18,19 @@ import java.util.List;
 public class FirstGoodsHandler {
     Logger log = LogManager.getLogger(ProductHandler.class);
 
+    @Autowired
+    IFirstGoodsService firstGoodsService;
+
     @RequestMapping("creat_first_goods")
     public String jumpIndexPage(Model model) {
-        log.debug("Debug日志测试");
+
         return "goods/creat_first_goods";
+    }
+    @RequestMapping("first_goods")
+    public String jumpFirstGoodsPage(Model model) {
+        List<FirstGoods> firstGoodsList=firstGoodsService.selectFirstGoodsListWithProduct();
+        model.addAttribute("firstGoodsList", firstGoodsList);
+        return "goods/show_goods";
     }
 
 }

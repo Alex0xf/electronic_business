@@ -2,26 +2,75 @@ package com.javasm.goods.model;
 
 public class FirstGoods {
     private Integer id;
-
     private String goodsName;
-
     private Integer num;
+    private Integer goodsTid;//一类商品类型id
+    private Integer goodsBid;//一类商品品牌id
+    private Integer attribute;//属性：0商品 1赠品 （默认是商品）
+    private Integer firstPid;//对应的一类产品
+    private Double buyPrice;//采购价格
+    private Double marketPrice;//市场价
+    private Double salesPrice;//商城价
+    private Integer isBuy;//是否可采购 0可采购（默认） 1不可
 
-    private Integer goodsTid;
+    private FirstProduct firstProduct;//一类产品
+    private GoodsType goodsType;//商品类型
+//    private  GoodsBrand goodsBrand;//商品品牌
 
-    private Integer goodsBid;
+    public FirstGoods() {
+    }
 
-    private Integer attribute;
+    public FirstGoods(Integer id, String goodsName, Integer num, Integer goodsTid, Integer goodsBid, Integer attribute, Integer firstPid, Double buyPrice, Double marketPrice, Double salesPrice, Integer isBuy, FirstProduct firstProduct, GoodsType goodsType) {
+        this.id = id;
+        this.goodsName = goodsName;
+        this.num = num;
+        this.goodsTid = goodsTid;
+        this.goodsBid = goodsBid;
+        this.attribute = attribute;
+        this.firstPid = firstPid;
+        this.buyPrice = buyPrice;
+        this.marketPrice = marketPrice;
+        this.salesPrice = salesPrice;
+        this.isBuy = isBuy;
+        this.firstProduct = firstProduct;
+        this.goodsType = goodsType;
+    }
 
-    private Integer firstPid;
+    @Override
+    public String toString() {
+        return "FirstGoods{" +
+                "id=" + id +
+                ", goodsName='" + goodsName + '\'' +
+                ", num=" + num +
+                ", goodsTid=" + goodsTid +
+                ", goodsBid=" + goodsBid +
+                ", attribute=" + attribute +
+                ", firstPid=" + firstPid +
+                ", buyPrice=" + buyPrice +
+                ", marketPrice=" + marketPrice +
+                ", salesPrice=" + salesPrice +
+                ", isBuy=" + isBuy +
+                ", firstProduct=" + firstProduct +
+                ", goodsType=" + goodsType +
+                '}';
+    }
 
-    private Double buyPrice;
+    public GoodsType getGoodsType() {
+        return goodsType;
+    }
 
-    private Double marketPrice;
+    public void setGoodsType(GoodsType goodsType) {
+        this.goodsType = goodsType;
+    }
 
-    private Double salesPrice;
 
-    private Integer isBuy;
+    public void setFirstProduct(FirstProduct firstProduct) {
+        this.firstProduct = firstProduct;
+    }
+
+    public FirstProduct getFirstProduct() {
+        return firstProduct;
+    }
 
     public Integer getId() {
         return id;

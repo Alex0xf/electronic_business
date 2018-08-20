@@ -13,7 +13,14 @@
     <result column="market_price" property="marketPrice" jdbcType="DOUBLE" />
     <result column="sales_price" property="salesPrice" jdbcType="DOUBLE" />
     <result column="is_buy" property="isBuy" jdbcType="INTEGER" />
+    <association property="firstProduct" javaType="com.javasm.goods.model.FirstProduct"
+                 resultMap="com.javasm.goods.dao.FirstProductMapper.BaseResultMap">
+    </association>
   </resultMap>
+
+
+
+
   <sql id="Base_Column_List" >
     id, goods_name, num, goods_tid, goods_bid, attribute, first_pid, buy_price, market_price, 
     sales_price, is_buy
@@ -161,4 +168,17 @@
       is_buy = #{isBuy,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+ <!-- <resultMap id="firstGoodsMap" type="com.javasm.goods.model.FirstGoods" extends="BaseResultMap">
+    <association property="firstProduct" javaType="com.javasm.goods.model.FirstProduct"
+                 resultMap="com.javasm.goods.dao.FirstProductMapper.BaseResultMap">
+    </association>
+  </resultMap>-->
+
+  <select id="selectFirstGoodsListWithProduct" resultMap="BaseResultMap">
+/*    SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/
+SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id
+  </select>
+
+
 </mapper>

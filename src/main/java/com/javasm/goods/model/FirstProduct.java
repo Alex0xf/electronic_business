@@ -11,6 +11,21 @@ public class FirstProduct {
 
     private String type;
 
+    private GoodsBrand goodsBrand;
+    /*private int brandId;*/
+
+    public FirstProduct() {
+    }
+
+    public FirstProduct(Integer id, String typeName, Integer bid, String color, String type, GoodsBrand goodsBrand) {
+        this.id = id;
+        this.typeName = typeName;
+        this.bid = bid;
+        this.color = color;
+        this.type = type;
+        this.goodsBrand = goodsBrand;
+    }
+
     @Override
     public String toString() {
         return "FirstProduct{" +
@@ -19,7 +34,24 @@ public class FirstProduct {
                 ", bid=" + bid +
                 ", color='" + color + '\'' +
                 ", type='" + type + '\'' +
+                ", goodsBrand=" + goodsBrand +
                 '}';
+    }
+
+    /*public int getBrandId() {
+        return brandId;
+    }
+
+    public void setBrandId(int brandId) {
+        this.brandId = brandId;
+    }*/
+
+    public GoodsBrand getGoodsBrand() {
+        return goodsBrand;
+    }
+
+    public void setGoodsBrand(GoodsBrand goodsBrand) {
+        this.goodsBrand = goodsBrand;
     }
 
     public Integer getId() {

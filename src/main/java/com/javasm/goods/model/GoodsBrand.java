@@ -9,6 +9,26 @@ public class GoodsBrand {
 
     private String brandDescribe;
 
+    public GoodsBrand() {
+    }
+
+    public GoodsBrand(Integer id, String brandName, String brandAddress, String brandDescribe) {
+        this.id = id;
+        this.brandName = brandName;
+        this.brandAddress = brandAddress;
+        this.brandDescribe = brandDescribe;
+    }
+
+    @Override
+    public String toString() {
+        return "GoodsBrand{" +
+                "id=" + id +
+                ", brandName='" + brandName + '\'' +
+                ", brandAddress='" + brandAddress + '\'' +
+                ", brandDescribe='" + brandDescribe + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }

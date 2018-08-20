@@ -2,6 +2,8 @@ package com.javasm.goods.dao;
 
 import com.javasm.goods.model.FirstGoods;
 
+import java.util.List;
+
 public interface FirstGoodsMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface FirstGoodsMapper {
     int updateByPrimaryKeySelective(FirstGoods record);
 
     int updateByPrimaryKey(FirstGoods record);
+
+    List<FirstGoods> selectFirstGoodsListWithProduct();
 }
