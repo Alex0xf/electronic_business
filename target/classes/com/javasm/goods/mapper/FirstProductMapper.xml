@@ -100,6 +100,10 @@
   </update>
 
   <select id="selectProductList" resultMap="BaseResultMap">
-    select * from t_first_product
+    select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id ;
+  </select>
+
+  <select id="selectProductListLimit"  resultMap="BaseResultMap">
+    select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id limit #{pageNum},#{pageSize}
   </select>
 </mapper>

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -26,12 +25,56 @@ public class ProductHandler {
     IProductService productService;
 
     @RequestMapping("first_product")
-    public String jumpIndexPage(Model model) {
-        log.debug("Debug日志测试");
-        List<FirstProduct> firstProductList = productService.selectProductList();
+    public String jumpIndexPage(HttpServletRequest request,Model model) {
+// List<FirstProduct> firstProductList = productService.selectProductList();//全部信息
+        /*Map<String,Object> param=new HashMap<>();*/
+        Integer pageNum,pageSize;
+        if(request.getParameter("pageNum")!=null&&request.getParameter("pageSize")!=null){
+            pageNum=Integer.parseInt(request.getParameter("pageNum"));
+            pageSize=Integer.parseInt(request.getParameter("pageSize"));
+        }else{
+            pageNum=1;
+            pageSize=5;
+        }
+        pageNum=(pageNum-1)*pageSize;
+        System.out.println(pageNum+"------"+pageSize);
+       /* param.put("pageNum", (pageNum-1)*pageSize);
+        param.put("pageSize",pageSize);*/
+        List<FirstProduct> firstProductList = productService.selectProductListLimit(pageNum,pageSize);
         model.addAttribute("productsList", firstProductList);
+        System.out.println(firstProductList);
         return "goods/first_product";
     }
+
+    @RequestMapping("/first_product_table")
+    @ResponseBody
+    public  Map<String,Object> refreshProductTablePage(HttpServletRequest request,HttpServletResponse response,Model model) {
+
+        Integer pageNum,pageSize;
+        if(request.getParameter("pageNum")!=null&&request.getParameter("pageSize")!=null){
+            pageNum=Integer.parseInt(request.getParameter("pageNum"));
+            pageSize=Integer.parseInt(request.getParameter("pageSize"));
+        }else{
+            pageNum=1;
+            pageSize=5;
+        }
+        pageNum=(pageNum-1)*pageSize;
+        System.out.println(pageNum+"------"+pageSize);
+       /* param.put("pageNum", (pageNum-1)*pageSize);
+        param.put("pageSize",pageSize);*/
+        List<FirstProduct> firstProductList = productService.selectProductListLimit(pageNum,pageSize);
+        Map<String,Object> firstProductMap=new HashMap<>();
+        firstProductMap.put("code",0);
+        firstProductMap.put("msg","");
+        firstProductMap.put("count",12);
+        //List<FirstProduct> firstProductList = productService.selectProductListLimit(pageNum,pageSize);
+        model.addAttribute("productsList", firstProductList);
+        firstProductMap.put("data",firstProductList);
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        return firstProductMap;
+    }
+
+
    @RequestMapping("/first_product_list")
    @ResponseBody
     public  Map<String,Object> jumpIndexPage(HttpServletResponse response) {
@@ -39,7 +82,7 @@ public class ProductHandler {
         Map<String,Object> firstProductMap=new HashMap<>();
         firstProductMap.put("code",0);
         firstProductMap.put("msg","");
-        firstProductMap.put("count",13);
+        firstProductMap.put("count",12);
       /* for (FirstProduct product: firstProductList) {
            int brand_id=product.getGoodsBrand().getId();
            product.setBrandId(brand_id);

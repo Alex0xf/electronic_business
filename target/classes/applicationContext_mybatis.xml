@@ -54,16 +54,16 @@
 	<!-- 如果要配置其他复杂的mybatis属性 可以单独写一个mybatis.xml 再按下面格式引入 -->
 	<property name="configLocation" value="classpath:mybatis-config.xml"></property>
 	<!-- 配置分页插件 -->
-		<property name="plugins">
+		<!--<property name="plugins">
 			<array>
 				<bean class="com.github.pagehelper.PageInterceptor">
 					<property name="properties">
-						<!-- 分页参数合理化 -->
+						&lt;!&ndash; 分页参数合理化 &ndash;&gt;
 						<value>reasonable=true</value>
 					</property>
 				</bean>
 			</array>
-		</property>
+		</property>-->
 </bean>
 <!-- mapper注入到Spring容器中 -->
 <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" p:basePackage="com.javasm.*.dao" p:sqlSessionFactoryBeanName="sessionFactory"></bean>

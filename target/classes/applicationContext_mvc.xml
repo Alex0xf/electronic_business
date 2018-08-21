@@ -37,6 +37,7 @@
 	<!-- 静态文件 -->
 	<mvc:resources location="/static/css/" mapping="/css/**/"></mvc:resources>
 	<mvc:resources location="/static/layui/css/" mapping="/layui/css/**/"></mvc:resources>
+	<mvc:resources location="/static/layui/font/" mapping="/layui/font/**/"></mvc:resources>
 	<mvc:resources location="/static/layui/" mapping="/layui/js/**/"></mvc:resources>
 	<mvc:resources location="/static/js/" mapping="/js/**/"></mvc:resources>
 	<mvc:resources location="/static/images/" mapping="/images/**/"></mvc:resources>

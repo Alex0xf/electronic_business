@@ -25,10 +25,10 @@
 <div class="layui-layout layui-layout-admin">
 
     <!--头部文件-->
-    <%@include file="../common/header.jsp"%>
+    <%@include file="../common/header.jsp" %>
 
     <!-- 左侧导航区域（可配合已有的头部文件） -->
-    <%@include file="../common/left_side_goods.jsp"%>
+    <%@include file="../common/left_side_goods.jsp" %>
 
     <!-- 内容主体区域 -->
     <div class="layui-body">
@@ -74,19 +74,21 @@
                             <td>${fGoods.firstProduct.type }</td>
                             <td>${fGoods.firstProduct.goodsBrand.brandName}</td>
                             <td>${fGoods.firstProduct.color}</td>
-                            <td><div class="layui-btn-group">
-                                <button class="layui-btn">查看</button>
-                                <button class="layui-btn ">修改</button>
-                                <button class="layui-btn">删除</button>
-                            </div></td>
+                            <td>
+                                <div class="layui-btn-group">
+                                    <button class="layui-btn">查看</button>
+                                    <button class="layui-btn ">修改</button>
+                                    <button class="layui-btn">删除</button>
+                                </div>
+                            </td>
                         </tr>
                     </c:forEach>
                     </tbody>
                 </table>
                 <!--分页 待完成-->
-                <div id="demo7">
-                    <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-10">
-                        <span class="layui-laypage-count">共 100 条</span>
+                <div id="test">
+                    <%--<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-10">
+                        <span class="layui-laypage-count">共 4 条</span>
                         <a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a>
                         <span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span>
                         <a href="javascript:;" data-page="2">2</a>
@@ -96,37 +98,39 @@
                         <span class="layui-laypage-spr">…</span>
                         <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a>
                         <a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
-                        <span class="layui-laypage-limits"><select lay-ignore="">
+                        &lt;%&ndash;<span class="layui-laypage-limits"><select lay-ignore="">
                         <option value="10" selected="">10 条/页</option><option value="20">20 条/页</option>
                         <option value="30">30 条/页</option><option value="40">40 条/页</option><option
                                 value="50">50 条/页</option>
-                    </select></span><a href="javascript:;" data-page="1" class="layui-laypage-refresh">
+                    </select></span>&ndash;%&gt;<a href="javascript:;" data-page="1" class="layui-laypage-refresh">
                         <i class="layui-icon layui-icon-refresh"></i>
                     </a><span class="layui-laypage-skip">到第<input type="text" min="1" value="1" class="layui-input">页
-                    <button type="button" class="layui-laypage-btn">确定</button></span>
-                    </div>
+                    <button type="button" class="layui-laypage-btn">确定</button></span>--%>
                 </div>
             </div>
         </div>
     </div>
     <!-- 底部固定区域 -->
-    <%@include file="../common/footer.jsp"%>
-</div>
-<script src="/layui/js/layui.js"></script>
-<script>
+    <%@include file="../common/footer.jsp" %>
+
+  <script src="/layui/js/layui.js"></script>
+    <script>
     //JavaScript代码区域
-    layui.use(['layer', 'form', 'element','laypage'], function () {
+    layui.use(['layer', 'form', 'element', 'laypage'], function () {
         var layer = layui.layer
-            ,form = layui.form//只有执行了这一步，部分表单元素才会自动修饰成功
-            ,element = layui.element
-            ,laypage=layui.laypage;
+            , form = layui.form//只有执行了这一步，部分表单元素才会自动修饰成功
+            , element = layui.element
+            , laypage = layui.laypage;
         //JavaScript代码区域
 
         form.render();//动态生成的表单还需这个
         //分页
         laypage.render({
-            elem: 'demo7'
-            , count: 100
+            elem: 'test'
+            , count: 3
+            , limit: 5
+            , limits: [5, 10, 20, 30]
+            , skip: true //开启跳页
             , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
             , jump: function (obj) {
                 console.log(obj)
@@ -134,7 +138,7 @@
         });
 
     });
-
-</script>
+    </script>
+</div>
 </body>
 </html>
