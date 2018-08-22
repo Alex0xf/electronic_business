@@ -49,7 +49,6 @@ public class ProductHandler {
     @RequestMapping("/first_product_table")
     @ResponseBody
     public  Map<String,Object> refreshProductTablePage(HttpServletRequest request,HttpServletResponse response,Model model) {
-
         Integer pageNum,pageSize;
         if(request.getParameter("pageNum")!=null&&request.getParameter("pageSize")!=null){
             pageNum=Integer.parseInt(request.getParameter("pageNum"));

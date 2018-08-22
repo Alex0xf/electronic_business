@@ -12,17 +12,11 @@ import java.util.List;
 @Service
 public class ProductServiceImpl implements IProductService {
 
-    @Override
-    public List<FirstProduct> selectProductListLimit() {
-        return null;
-    }
-
     @Autowired
     FirstProductMapper firstProductDao;
 
     @Override
     public List<FirstProduct> selectProductList() {
-
 
         return firstProductDao.selectProductList();
     }

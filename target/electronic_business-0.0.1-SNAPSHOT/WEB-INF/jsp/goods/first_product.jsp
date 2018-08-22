@@ -52,12 +52,22 @@
               <%--  <%@include file="../common/table_first_product.jsp"%>--%>
                 </table>
                 <!--分页-->
-                <div id="pageDemo">  </div>
+             <%--   <div id="pageDemo">  </div>--%>
             </div>
     <!-- 底部固定区域 -->
     <%@include file="../common/footer.jsp"%>
 </div>
 <script src="/layui/js/layui.js"></script>
+   <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="createFirstGoods">创建一类商品</a>
+           <%-- <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>--%>
+
+            <!-- 这里同样支持 laytpl 语法，如： -->
+           <%-- {{#  if(d.auth > 2){ }}
+            <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
+            {{#  } }}--%>
+   </script>
 <script>
     //JavaScript代码区域
     layui.use(['layer', 'form', 'element','table','laypage'], function(){
@@ -104,10 +114,14 @@
             ,limit:5
             ,limits:[5, 10, 20, 30]
             ,cols: [[ //表头
-                {field: 'id', title: '存货档案编码', width:150, sort: true, fixed: 'left'}
-                ,{field: 'typeName', title: '基础库-分类', width:150}
-                ,{field: 'type', title: '基础库-品牌', width:150, sort: true}
-                ,{field: 'color', title: '基础库-颜色', width: 150}
+                {field: 'id', title: '存货档案编码', sort: true, fixed: 'left'}
+                ,{field: 'typeName', title: '基础库-分类'}
+                ,{field: 'type', title: '基础库-品牌',sort: true}
+                ,{field: 'color', title: '基础库-颜色'}
+                ,{fixed: 'right',align:'center', toolbar: '#barDemo'}
+                //{field: '', title: '操作', width: 150}
+
+
                /* ,{field: 'brandId', title: '品牌id', width: 170}*/
             ]]
             ,request: {
@@ -116,6 +130,30 @@
             }
         });
 
+        table.on('tool(test)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的DOM对象
+
+            if(layEvent === 'createFirstGoods'){ //创建一类商品
+                
+
+            } /*else if(layEvent === 'del'){ //删除
+                layer.confirm('真的删除行么', function(index){
+                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                    layer.close(index);
+                    //向服务端发送删除指令
+                });
+            } else if(layEvent === 'edit'){ //编辑
+                //do something
+
+                //同步更新缓存对应的值
+                obj.update({
+                    username: '123'
+                    ,title: 'xxx'
+                });
+            }*/
+        });
 
 
 

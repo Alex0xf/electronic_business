@@ -79,4 +79,12 @@
       type_describe = #{typeDescribe,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="selectGoodsTypeList" resultMap="BaseResultMap">
+    select * from t_goodsType
+  </select>
+
+  <select id="selectGoodsTypeListLimit"  resultMap="BaseResultMap">
+    select * from t_goodsType limit #{pageNum},#{pageSize}
+  </select>
 </mapper>

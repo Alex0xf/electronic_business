@@ -1,6 +1,9 @@
 package com.javasm.goods.dao;
 
 import com.javasm.goods.model.GoodsBrand;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface GoodsBrandMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +17,8 @@ public interface GoodsBrandMapper {
     int updateByPrimaryKeySelective(GoodsBrand record);
 
     int updateByPrimaryKey(GoodsBrand record);
+
+    List<GoodsBrand> selectGoodsBrandList();
+
+    List<GoodsBrand> selectGoodsBrandListLimit(@Param("pageNum") int pageNum, @Param("pageSize")int pageSize);
 }

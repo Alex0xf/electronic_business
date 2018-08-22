@@ -79,4 +79,12 @@
       brand_describe = #{brandDescribe,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="selectGoodsBrandList" resultMap="BaseResultMap">
+    select * from t_goodsbrand
+  </select>
+
+  <select id="selectGoodsBrandListLimit"  resultMap="BaseResultMap">
+    select * from t_goodsbrand limit #{pageNum},#{pageSize}
+  </select>
 </mapper>

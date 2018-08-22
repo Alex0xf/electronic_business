@@ -1,6 +1,9 @@
 package com.javasm.goods.dao;
 
 import com.javasm.goods.model.GoodsType;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface GoodsTypeMapper {
     int deleteByPrimaryKey(Integer id);
@@ -14,4 +17,8 @@ public interface GoodsTypeMapper {
     int updateByPrimaryKeySelective(GoodsType record);
 
     int updateByPrimaryKey(GoodsType record);
+
+    List<GoodsType> selectGoodsTypeList();
+
+    List<GoodsType> selectGoodsTypeListLimit(@Param("pageNum") int pageNum, @Param("pageSize")int pageSize);
 }
