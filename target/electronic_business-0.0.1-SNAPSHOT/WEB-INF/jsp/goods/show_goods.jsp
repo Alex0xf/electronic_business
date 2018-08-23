@@ -86,27 +86,7 @@
                     </tbody>
                 </table>
                 <!--分页 待完成-->
-                <div id="test">
-                    <%--<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-10">
-                        <span class="layui-laypage-count">共 4 条</span>
-                        <a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a>
-                        <span class="layui-laypage-curr"><em class="layui-laypage-em"></em><em>1</em></span>
-                        <a href="javascript:;" data-page="2">2</a>
-                        <a href="javascript:;" data-page="3">3</a>
-                        <a href="javascript:;" data-page="4">4</a>
-                        <a href="javascript:;" data-page="5">5</a>
-                        <span class="layui-laypage-spr">…</span>
-                        <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a>
-                        <a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
-                        &lt;%&ndash;<span class="layui-laypage-limits"><select lay-ignore="">
-                        <option value="10" selected="">10 条/页</option><option value="20">20 条/页</option>
-                        <option value="30">30 条/页</option><option value="40">40 条/页</option><option
-                                value="50">50 条/页</option>
-                    </select></span>&ndash;%&gt;<a href="javascript:;" data-page="1" class="layui-laypage-refresh">
-                        <i class="layui-icon layui-icon-refresh"></i>
-                    </a><span class="layui-laypage-skip">到第<input type="text" min="1" value="1" class="layui-input">页
-                    <button type="button" class="layui-laypage-btn">确定</button></span>--%>
-                </div>
+                <div id="test"> </div>
             </div>
         </div>
     </div>

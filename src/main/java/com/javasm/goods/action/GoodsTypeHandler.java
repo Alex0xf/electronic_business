@@ -1,14 +1,11 @@
 package com.javasm.goods.action;
 
-import com.javasm.goods.model.GoodsBrand;
 import com.javasm.goods.model.GoodsType;
-import com.javasm.goods.service.IGoodsBrandService;
 import com.javasm.goods.service.IGoodsTypeService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

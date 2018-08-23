@@ -38,6 +38,8 @@
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.11.0" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-web:2.11.0" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.0.0" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:0.2.23" />
           <element id="library" level="project" name="Maven: redis.clients:jedis:2.7.2" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.20" />

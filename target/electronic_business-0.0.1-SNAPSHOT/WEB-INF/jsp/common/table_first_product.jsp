@@ -15,8 +15,8 @@
         <th>操作</th>
     </tr>
     </thead>
-    <tbody>
-    <c:forEach items="${productsList}" var="product">
+    <tbody id="my_tbody">
+   <%-- <c:forEach items="${productsList}" var="product">
         <tr>
             <td>${product.id }</td>
             <td>${product.typeName }</td>
@@ -27,5 +27,5 @@
                 <button class="layui-btn">创建一类商品</button>
             </td>
         </tr>
-    </c:forEach>
+    </c:forEach>--%>
     </tbody>

@@ -1,5 +1,7 @@
 package com.javasm.goods.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.javasm.goods.dao.FirstProductMapper;
 import com.javasm.goods.model.FirstProduct;
 import com.javasm.goods.service.IProductService;
@@ -16,15 +18,26 @@ public class ProductServiceImpl implements IProductService {
     FirstProductMapper firstProductDao;
 
     @Override
-    public List<FirstProduct> selectProductList() {
+    //使用分页插件pagehelper帮查出来的所有信息分页
+    public PageInfo<FirstProduct> selectProductList(int page, int pageSize) {
+        PageHelper.startPage(page, pageSize);
+        List<FirstProduct> list = firstProductDao.selectProductList();
+      /*  for(FirstProduct product:list){
 
-        return firstProductDao.selectProductList();
+            long name = product.getIp().getName();
+            Dept dept = iDeptService.selectByPrimaryKey(name);
+            System.out.println("dept:"+dept);
+            employee.setDept(dept);
+            System.out.println("每个雇员:"+employee);
+        }*/
+
+        return new PageInfo(list);
     }
 
-    @Override
+   /* @Override
     public List<FirstProduct> selectProductListLimit(@Param("pageNum") int pageNum,@Param("pageSize")int pageSize) {
 
         return firstProductDao.selectProductListLimit(pageNum,pageSize);
-    }
+    }*/
 }
 

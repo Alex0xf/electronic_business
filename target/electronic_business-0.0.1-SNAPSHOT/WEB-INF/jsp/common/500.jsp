@@ -30,13 +30,17 @@
     <%@include file="left_side_goods.jsp"%>
 
     <!-- 内容主体区域 -->
-    <div class="layadmin-tabsbody-item layui-show">
-        <div class="layui-fluid">
+    <div class="layui-body" id="LAY_app_body">
+        <div class="layadmin-tabsbody-item layui-show"><div class="layui-fluid">
             <div class="layadmin-tips">
-                <i class="layui-icon" face=""></i>
-                <div class="layui-text" style="font-size: 20px;">好像出错了呢</div>
+                <i class="layui-icon" face="" style="font-size: 300px; color: #009688;margin-left: 38%;"></i>
+
+                <div class="layui-text" style="font-size: 20px;align-content: center"margin-left: 38%;>
+                    好像出错了呢
+                </div>
+
             </div>
-        </div>
+        </div></div>
     </div>
 
     <!-- 底部固定区域 -->
@@ -52,7 +56,6 @@
             ,element = layui.element;
         //JavaScript代码区域
 
-        form.render();//动态生成的表单还需
     });
 
 </script>

@@ -37,9 +37,6 @@
             <!--面包屑-->
             <blockquote class="layui-elem-quote">
                <span class="layui-breadcrumb">
-                  <%-- <a href="">商品与赠品管理</a>
-                   <a href="">商品管理</a>
-                   <a><cite>产品查询</cite></a>--%>
                   <a><cite>首页</cite></a>
                 </span>
             </blockquote>

@@ -1,5 +1,6 @@
 package com.javasm.goods.action;
 
+import com.alibaba.fastjson.JSON;
 import com.javasm.goods.model.FirstGoods;
 import com.javasm.goods.model.FirstProduct;
 import com.javasm.goods.service.IFirstGoodsService;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -22,8 +24,13 @@ public class FirstGoodsHandler {
     IFirstGoodsService firstGoodsService;
 
     @RequestMapping("creat_first_goods")
-    public String jumpIndexPage(Model model) {
-
+    public String jumpIndexPage(HttpServletRequest request,Model model) {
+        Object product=JSON.parseObject(request.getParameter("product"));
+        if(product!=null){
+           model.addAttribute("product",product);
+        }else{
+            model.addAttribute("product","xxx");
+        }
         return "goods/creat_first_goods";
     }
     @RequestMapping("first_goods")

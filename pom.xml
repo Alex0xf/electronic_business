@@ -151,12 +151,12 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.21</version>
         </dependency>
-        <!--&lt;!&ndash; Mybatis 分页插件 &ndash;&gt;
+        <!-- Mybatis 分页插件 -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.0.0</version>
-        </dependency>-->
+        </dependency>
         <!-- Druid -->
         <dependency>
             <groupId>com.alibaba</groupId>
