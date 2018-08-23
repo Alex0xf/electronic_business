@@ -17,13 +17,12 @@ public class ProductServiceImpl implements IProductService {
     @Autowired
     FirstProductMapper firstProductDao;
 
-    @Override
     //使用分页插件pagehelper帮查出来的所有信息分页
+    @Override
     public PageInfo<FirstProduct> selectProductList(int page, int pageSize) {
         PageHelper.startPage(page, pageSize);
         List<FirstProduct> list = firstProductDao.selectProductList();
       /*  for(FirstProduct product:list){
-
             long name = product.getIp().getName();
             Dept dept = iDeptService.selectByPrimaryKey(name);
             System.out.println("dept:"+dept);

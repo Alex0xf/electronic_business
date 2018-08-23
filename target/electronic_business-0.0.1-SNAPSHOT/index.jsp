@@ -48,14 +48,23 @@
 </div>
 
 <script src="/layui/js/layui.js"></script>
-<script>
+<script type="text/javascript">
     //JavaScript代码区域
-    layui.use('element', function () {
-        var element = layui.element;
+    layui.use(['layer', 'form', 'element', 'table', 'laypage'], function () {
+        var layer = layui.layer
+            , form = layui.form
+            , element = layui.element
+            , table = layui.table
+            , laypage = layui.laypage
+            , $ = layui.$;            //使用jQuery;
 
+        layer.msg('欢迎您');
     });
 
 
+    function jumpToFristProductPage() {
+        window.location.href="goods/first_product";
+    }
 </script>
 </body>
 </html>

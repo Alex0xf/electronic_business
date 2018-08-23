@@ -1,12 +1,9 @@
 package com.javasm.goods.service;
 
+import com.github.pagehelper.PageInfo;
 import com.javasm.goods.model.GoodsType;
-import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
 
 public interface IGoodsTypeService {
-    List<GoodsType> selectGoodsTypeList();
 
-    List<GoodsType> selectGoodsTypeListLimit(@Param("pageNum") int pageNum, @Param("pageSize")int pageSize);
+    PageInfo<GoodsType> selectGoodsTypeList(int page, int pageSize);
 }

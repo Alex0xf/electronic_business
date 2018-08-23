@@ -20,5 +20,4 @@ public interface GoodsTypeMapper {
 
     List<GoodsType> selectGoodsTypeList();
 
-    List<GoodsType> selectGoodsTypeListLimit(@Param("pageNum") int pageNum, @Param("pageSize")int pageSize);
 }

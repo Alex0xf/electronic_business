@@ -20,9 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>一类产品页面</title>
     <link rel="stylesheet" href="/layui/css/layui.css" >
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <%--<link rel="stylesheet" href="css/bootstrap.min.css">--%>
 
 </head>
+
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
 
@@ -39,8 +40,9 @@
                 <legend>商品与赠品管理系统</legend>
             </fieldset>
 
+
             <!--ajax刷新的部分-->
-          <div id="ajax_replace">
+          <div id="ajax_replace" >
             <!--面包屑-->
             <blockquote class="layui-elem-quote">
                <span class="layui-breadcrumb">
@@ -51,7 +53,6 @@
             </blockquote>
 
             <!--表格-->
-           <%-- <table class="layui-hide" id="test" lay-filter="demo"></table>--%>
             <div id="my_first_product_table">
                 <table class="layui-table" id="demo" lay-filter="test">
                     <colgroup>
@@ -95,7 +96,7 @@
                 , table = layui.table
                 , laypage = layui.laypage
                 , $ = layui.$;            //使用jQuery;
-            layer.msg('欢迎您');
+
             form.render();//表单
         });
 
@@ -158,8 +159,9 @@
         //点击创建一类商品时触发
         function creatFirstGoodsByProduct(obj){
            /* layer.msg(obj.id+"--"+obj.typeName);//获得含当前行所有信息的对象*/
-            var product=JSON.stringify(obj);
+           var product=JSON.stringify(obj);
             $.post('goods/creat_first_goods',{"product":product}, function(data) {
+                //layer.msg(product);
                 $('#ajax_replace').html(data);
                 },"html")
 

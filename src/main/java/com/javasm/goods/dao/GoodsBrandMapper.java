@@ -20,5 +20,4 @@ public interface GoodsBrandMapper {
 
     List<GoodsBrand> selectGoodsBrandList();
 
-    List<GoodsBrand> selectGoodsBrandListLimit(@Param("pageNum") int pageNum, @Param("pageSize")int pageSize);
 }

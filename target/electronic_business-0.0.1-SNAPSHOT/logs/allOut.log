@@ -2394,3 +2394,794 @@
 22:05:41.598 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
 22:05:41.599 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
 22:05:41.600 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+22:11:27.544 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:11:27.545 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:11:27.548 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:11:27.549 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:11:27.550 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:11:27.557 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:11:59.047 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:11:59.048 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:11:59.049 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:11:59.050 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:11:59.051 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:11:59.055 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:13:53.806 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:13:53.807 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:13:53.809 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:13:53.810 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:13:53.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:13:53.813 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:14:38.354 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:14:38.355 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:14:38.357 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:14:38.358 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:14:38.358 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:14:38.361 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:15:10.825 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:15:10.825 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:15:10.827 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:15:10.828 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:15:10.830 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:15:10.831 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:16:25.796 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:16:25.797 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:16:25.800 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:16:25.801 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:16:25.802 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:16:25.807 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:18:01.331 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:18:01.333 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:18:01.336 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:18:01.338 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:18:01.339 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:18:01.341 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:18:16.408 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:18:16.409 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:18:16.411 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:18:16.412 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:18:16.413 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:18:16.415 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:21:26.140 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:21:26.141 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:21:26.143 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:21:26.144 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:21:26.145 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:21:26.147 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:21:41.375 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:21:41.375 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:21:41.377 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:21:41.378 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:21:41.378 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:21:41.380 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:22:02.719 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:22:02.720 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:02.721 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:22:02.722 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:22:02.723 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:02.725 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:22:13.239 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:22:13.240 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:13.242 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:22:13.243 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:22:13.244 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:13.246 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:22:24.876 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:22:24.877 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:24.879 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:22:24.880 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:22:24.880 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:24.885 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:22:27.969 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:22:27.969 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:27.971 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:22:27.971 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:22:27.972 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:27.974 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:22:47.266 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:22:47.266 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:47.268 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:22:47.269 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:22:47.269 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:22:47.271 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:23:42.272 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:23:42.272 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:23:42.274 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:23:42.274 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:23:42.275 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:23:42.277 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:24:38.092 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:24:38.092 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:24:38.095 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:24:38.096 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:24:38.096 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:24:38.105 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:25:15.259 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:25:15.260 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:25:15.262 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:25:15.262 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:25:15.263 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:25:15.265 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:25:32.852 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:25:32.852 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:25:32.854 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:25:32.855 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:25:32.856 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:25:32.858 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:28:18.890 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:28:18.891 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:28:18.892 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:28:18.893 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:28:18.894 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:28:18.895 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:33:38.088 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:33:38.089 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:33:38.090 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:33:38.091 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:33:38.092 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:33:38.094 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:34:11.807 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:34:11.808 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:34:11.809 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:34:11.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:34:11.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:34:11.813 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:36:44.860 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:36:44.861 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:36:44.863 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:36:44.863 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:36:44.864 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:36:44.867 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:37:36.294 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:37:36.294 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:37:36.296 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:37:36.297 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:37:36.298 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:37:36.300 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:38:39.737 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:38:39.738 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:38:39.739 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:38:39.740 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:38:39.740 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:38:39.742 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:41:32.545 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:41:32.547 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:41:32.549 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:41:32.549 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:41:32.550 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:41:32.552 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:42:12.924 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:42:12.925 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:42:12.927 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:42:12.928 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:42:12.929 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:42:12.932 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:43:01.685 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:43:01.686 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:43:01.687 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:43:01.688 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:43:01.689 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:43:01.691 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:43:27.664 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:43:27.665 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:43:27.666 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:43:27.667 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:43:27.668 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:43:27.672 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+22:45:20.319 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+22:45:20.320 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:45:20.322 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+22:45:20.323 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+22:45:20.324 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+22:45:20.326 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:09:59.441 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:09:59.442 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:09:59.444 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:09:59.445 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:09:59.445 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:09:59.449 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:11:18.225 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:11:18.226 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:11:18.227 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:11:18.228 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:11:18.228 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:11:18.235 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:12:14.671 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:12:14.673 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:12:14.676 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:12:14.677 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:12:14.677 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:12:14.682 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:13:48.512 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:13:48.515 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:13:48.518 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:13:48.519 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:13:48.520 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:13:48.522 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:17:38.039 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:17:38.041 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:17:38.044 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:17:38.045 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:17:38.046 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:17:38.053 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:18:06.044 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:18:06.044 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:18:06.046 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:18:06.047 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:18:06.047 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:18:06.067 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:18:09.253 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:18:09.254 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:18:09.256 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:18:09.257 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:18:09.258 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:18:09.260 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:18:40.149 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:18:40.150 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:18:40.151 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:18:40.151 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:18:40.151 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:18:40.153 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:19:13.240 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:19:13.241 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:19:13.275 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:19:13.276 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:19:13.277 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:19:13.278 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:20:05.206 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:20:05.207 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:20:05.210 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:20:05.211 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:20:05.212 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:20:05.214 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:22:08.728 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:22:08.729 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:22:08.732 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:22:08.733 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:22:08.733 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:22:08.735 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:27:52.261 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:27:52.262 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:52.265 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:27:52.266 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:27:52.267 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:52.269 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:27:54.565 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:27:54.567 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:54.570 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:27:54.571 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:27:54.571 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:54.573 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:27:54.735 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:27:54.736 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:54.737 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:27:54.738 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:27:54.738 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:54.740 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:27:54.939 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:27:54.939 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:54.941 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:27:54.941 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:27:54.942 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:54.943 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:27:55.130 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:27:55.131 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:55.132 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:27:55.133 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:27:55.134 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:55.136 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:27:55.331 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:27:55.331 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:55.333 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:27:55.333 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:27:55.334 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:27:55.336 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:28:03.566 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:28:03.567 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:28:03.568 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:28:03.569 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:28:03.569 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:28:03.571 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:28:06.075 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:28:06.075 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:28:06.077 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:28:06.078 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 10,5 
+23:28:06.079 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:28:06.080 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+23:28:08.983 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+23:28:08.985 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:28:08.986 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+23:28:08.987 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+23:28:08.987 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:28:08.988 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+23:28:27.436 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType LIMIT ? OFFSET ? 
+23:28:27.436 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+23:28:27.438 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+23:28:35.528 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
+23:28:35.529 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+23:28:35.530 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+23:48:29.376 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id 
+23:48:29.377 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+23:48:29.450 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 7
+00:02:13.765 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
+00:02:13.770 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+00:02:13.772 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+00:08:24.832 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
+00:08:24.833 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+00:08:24.837 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+00:11:16.362 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
+00:11:16.363 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+00:11:16.364 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+00:11:57.081 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
+00:11:57.083 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+00:11:57.086 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+00:12:04.931 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand LIMIT ? OFFSET ? 
+00:12:04.932 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 0(Integer), 5(Integer)
+00:12:04.935 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 0
+00:13:22.255 DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+00:13:48.055 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:13:48.089 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:13:48.125 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:13:48.125 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 5 
+00:13:48.125 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:13:48.125 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:13:53.660 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:13:53.661 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:13:53.663 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:13:53.666 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:13:53.667 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:13:53.672 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:15:23.691 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:15:23.692 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:15:23.693 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:15:23.694 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 2 
+00:15:23.695 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:15:23.697 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:19:54.829 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:19:54.830 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:19:54.833 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:19:54.835 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3 
+00:19:54.835 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:19:54.838 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:20:04.514 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:04.515 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:04.517 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:04.518 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3,3 
+00:20:04.519 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:04.522 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:20:05.030 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:05.031 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:05.035 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:05.037 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 6,3 
+00:20:05.038 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:05.041 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:20:06.430 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:06.430 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:06.432 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:06.433 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 5,5 
+00:20:06.434 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:06.437 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 4
+00:20:07.534 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:07.536 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:07.537 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:07.538 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 5 
+00:20:07.539 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:07.542 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:20:09.678 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:09.679 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:09.682 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:09.683 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 5,5 
+00:20:09.686 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:09.688 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 4
+00:20:12.877 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:12.878 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:12.880 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:12.881 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 10 
+00:20:12.881 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:12.884 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 9
+00:20:15.980 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:20:15.981 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:15.984 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:20:15.985 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3 
+00:20:15.986 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:20:15.987 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:36:21.485 DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+00:38:24.127 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:24.144 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:24.170 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:24.172 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 2 
+00:38:24.172 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:24.174 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:38:45.028 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:45.030 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:45.032 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:45.033 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 3 
+00:38:45.034 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:45.038 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:38:46.721 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:46.722 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:46.723 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:46.724 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 3,3 
+00:38:46.725 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:46.728 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:38:47.238 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:47.241 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:47.242 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:47.243 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 6,3 
+00:38:47.243 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:47.245 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:38:47.803 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:47.805 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:47.807 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:47.807 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 9,3 
+00:38:47.808 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:47.809 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:38:49.348 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:49.349 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:49.351 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:49.353 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 10,5 
+00:38:49.353 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:49.360 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:38:51.901 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:51.901 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:51.903 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:51.904 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 5 
+00:38:51.904 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:51.906 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:38:53.420 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:53.421 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:53.422 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:53.424 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 10 
+00:38:53.426 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:53.431 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 10
+00:38:57.123 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:57.124 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:57.129 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:57.129 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 10,10 
+00:38:57.130 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:57.131 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:38:58.878 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:38:58.879 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:58.880 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:38:58.881 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 10 
+00:38:58.881 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:38:58.884 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 10
+00:39:09.647 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:39:09.647 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:39:09.649 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:39:09.650 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3 
+00:39:09.651 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:39:09.652 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:39:40.356 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:39:40.357 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:39:40.359 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:39:40.360 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:39:40.360 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:39:40.363 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:42:02.177 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:42:02.178 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:02.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:42:02.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:42:02.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:02.188 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:42:19.224 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:42:19.225 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:19.226 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:42:19.227 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5,5 
+00:42:19.228 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:19.230 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:42:20.133 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:42:20.134 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:20.136 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:42:20.137 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 10,5 
+00:42:20.137 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:20.141 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:42:56.026 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:42:56.027 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:56.029 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:42:56.061 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:42:56.061 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:42:56.063 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:43:30.123 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:43:30.124 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:43:30.126 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:43:30.127 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:43:30.127 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:43:30.129 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:43:54.325 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:43:54.326 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:43:54.327 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:43:54.328 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:43:54.328 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:43:54.331 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:44:16.565 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:44:16.566 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:16.569 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:44:16.570 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:44:16.571 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:16.573 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:44:35.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+00:44:35.812 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:35.813 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:44:35.814 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 3 
+00:44:35.815 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:35.816 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:44:37.882 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+00:44:37.882 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:37.884 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:44:37.885 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3 
+00:44:37.885 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:37.887 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:44:44.147 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+00:44:44.148 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:44.149 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:44:44.151 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+00:44:44.151 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:44:44.154 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+00:51:45.637 DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+00:52:18.369 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:52:18.398 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:52:18.427 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:52:18.429 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 1 
+00:52:18.430 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:52:18.433 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:53:35.240 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:53:35.241 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:53:35.243 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:53:35.243 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 2 
+00:53:35.244 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:53:35.248 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:55:29.459 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:55:29.460 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:55:29.462 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:55:29.463 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 2 
+00:55:29.463 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:55:29.466 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:56:31.257 DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+00:56:51.643 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:56:51.679 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:56:51.699 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:56:51.701 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 1 
+00:56:51.702 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:56:51.706 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:57:11.545 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:57:11.546 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:57:11.548 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:57:11.548 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 2 
+00:57:11.549 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:57:11.554 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:57:52.405 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:57:52.406 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:57:52.409 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:57:52.409 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 1,1 
+00:57:52.410 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:57:52.412 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:57:53.966 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:57:53.968 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:57:53.970 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:57:53.971 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3,3 
+00:57:53.972 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:57:53.978 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:58:38.290 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:38.291 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:38.293 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:38.294 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 1 
+00:58:38.295 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:38.299 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:45.943 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:45.944 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:45.945 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:45.946 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 6,1 
+00:58:45.947 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:45.948 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:47.231 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:47.231 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:47.238 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:47.239 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 1 
+00:58:47.240 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:47.242 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:48.543 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:48.544 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:48.546 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:48.548 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 2 
+00:58:48.549 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:48.556 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+00:58:51.350 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:51.351 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:51.353 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:51.354 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+00:58:51.355 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:51.359 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:58:52.605 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:52.606 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:52.608 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:52.609 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3,3 
+00:58:52.611 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:52.622 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+00:58:53.001 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:58:53.001 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:53.004 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:58:53.005 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 6,3 
+00:58:53.005 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:58:53.008 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:59:15.597 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+00:59:15.599 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:59:15.600 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+00:59:15.601 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+00:59:15.602 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+00:59:15.605 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:03:48.218 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:03:48.221 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:03:48.224 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:03:48.226 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+01:03:48.227 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:03:48.229 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:04:54.507 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:04:54.508 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:04:54.510 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:04:54.511 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+01:04:54.511 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:04:54.514 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:05:04.891 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:04.892 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:04.893 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:04.894 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+01:05:04.895 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:04.897 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:05:05.642 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:05.643 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:05.645 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:05.646 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3,3 
+01:05:05.647 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:05.649 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:05:06.133 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:06.134 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:06.137 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:06.138 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 6,3 
+01:05:06.139 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:06.140 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:07.805 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:07.806 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:07.808 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:07.809 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 5,5 
+01:05:07.810 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:07.814 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+01:05:09.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:09.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:09.183 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:09.184 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 5 
+01:05:09.184 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:09.189 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:05:10.510 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:10.511 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:10.512 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:10.513 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 10 
+01:05:10.514 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:10.518 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 7
+01:05:12.436 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:12.437 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:12.439 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:12.439 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+01:05:12.440 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:12.443 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:05:55.099 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_goods AS fg, t_first_product AS fp, t_goodsbrand AS b WHERE fg.first_pid = fp.id AND fg.attribute = 0 AND fp.bid = b.id 
+01:05:55.100 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:55.101 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:05:55.103 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: /* SELECT * from t_first_goods AS fg,t_first_product as fp WHERE fg.first_pid=fp.id and fg.attribute=0*/ SELECT * from t_first_goods AS fg,t_first_product as fp ,t_goodsbrand AS b WHERE fg.first_pid=fp.id and fg.attribute=0 AND fp.bid=b.id LIMIT 3 
+01:05:55.104 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:05:55.106 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:23:49.173 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:23:49.173 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:23:49.176 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:23:49.176 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:23:49.177 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:23:49.179 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:27:31.695 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:27:31.696 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:27:31.697 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:27:31.698 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:27:31.699 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:27:31.701 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:28:11.769 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:28:11.771 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:11.774 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:28:11.774 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:28:11.775 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:11.777 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:28:20.809 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:28:20.809 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:20.810 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:28:20.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:28:20.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:20.813 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:28:34.164 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:28:34.165 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:34.166 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:28:34.167 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:28:34.167 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:34.169 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:28:46.057 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:28:46.058 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:46.060 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:28:46.061 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:28:46.062 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:28:46.064 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:29:47.329 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+01:29:47.330 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:29:47.332 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:29:47.333 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 3 
+01:29:47.334 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:29:47.335 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+01:29:54.895 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:29:54.895 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:29:54.897 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:29:54.898 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:29:54.899 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:29:54.902 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:30:39.052 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:30:39.053 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:30:39.055 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:30:39.056 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:30:39.056 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:30:39.058 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:30:45.741 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:30:45.742 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:30:45.744 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:30:45.745 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:30:45.745 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:30:45.747 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:32:00.628 DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+01:32:12.205 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:32:12.229 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:32:12.244 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:32:12.246 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:32:12.247 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:32:12.250 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:34:02.939 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:34:02.940 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:34:02.942 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:34:02.943 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:34:02.943 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:34:02.948 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:34:04.113 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:34:04.114 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:34:04.116 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:34:04.117 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:34:04.118 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:34:04.122 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:37:38.663 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:37:38.665 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:37:38.667 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:37:38.668 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:37:38.669 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:37:38.674 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:39:32.001 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:39:32.002 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:32.005 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:39:32.007 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:39:32.007 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:32.010 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:39:35.092 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:39:35.093 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:35.096 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:39:35.098 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5,5 
+01:39:35.099 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:35.101 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:39:35.524 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:39:35.524 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:35.528 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:39:35.529 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 10,5 
+01:39:35.529 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:35.531 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+01:39:37.155 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:39:37.157 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:37.158 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:39:37.159 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:39:37.160 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:39:37.164 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+01:40:12.659 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+01:40:12.660 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:40:12.661 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+01:40:12.662 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+01:40:12.663 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+01:40:12.666 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5

@@ -36,6 +36,8 @@
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
                 <legend>商品与赠品管理系统</legend>
             </fieldset>
+            <!--ajax刷新的部分-->
+            <div id="ajax_replace" >
             <!--面包屑-->
             <blockquote class="layui-elem-quote">
                <span class="layui-breadcrumb">
@@ -46,8 +48,8 @@
             </blockquote>
 
             <!--表格-->
-            <div>
-                <table class="layui-table">
+            <div id="my_first_goods_table">
+                <table class="layui-table" id="first_goods" lay-filter="test">
                     <colgroup>
                         <col width="150">
                         <col width="200">
@@ -64,61 +66,102 @@
                         <th>操作</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <c:forEach items="${firstGoodsList}" var="fGoods">
-                        <tr>
-
-                            <td>${fGoods.id }</td>
-                            <td>${fGoods.goodsName }</td>
-                            <td>${fGoods.firstProduct.typeName}</td>
-                            <td>${fGoods.firstProduct.type }</td>
-                            <td>${fGoods.firstProduct.goodsBrand.brandName}</td>
-                            <td>${fGoods.firstProduct.color}</td>
-                            <td>
-                                <div class="layui-btn-group">
-                                    <button class="layui-btn">查看</button>
-                                    <button class="layui-btn ">修改</button>
-                                    <button class="layui-btn">删除</button>
-                                </div>
-                            </td>
-                        </tr>
-                    </c:forEach>
-                    </tbody>
+                    <tbody id="my_first_goods_tbody"></tbody>
                 </table>
                 <!--分页 待完成-->
-                <div id="test"> </div>
+                <div id="page_first_goods"> </div>
             </div>
         </div>
-    </div>
+
     <!-- 底部固定区域 -->
     <%@include file="../common/footer.jsp" %>
+        </div>
+    </div>
+    <script src="/layui/js/layui.js"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.form.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-  <script src="/layui/js/layui.js"></script>
-    <script>
-    //JavaScript代码区域
-    layui.use(['layer', 'form', 'element', 'laypage'], function () {
-        var layer = layui.layer
-            , form = layui.form//只有执行了这一步，部分表单元素才会自动修饰成功
-            , element = layui.element
-            , laypage = layui.laypage;
-        //JavaScript代码区域
 
-        form.render();//动态生成的表单还需这个
-        //分页
-        laypage.render({
-            elem: 'test'
-            , count: 3
-            , limit: 5
-            , limits: [5, 10, 20, 30]
-            , skip: true //开启跳页
-            , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
-            , jump: function (obj) {
-                console.log(obj)
-            }
+
+    <script type="text/javascript">
+        layui.use(['layer', 'form', 'element', 'table', 'laypage'], function () {
+            var layer = layui.layer
+                , form = layui.form
+                , element = layui.element
+                , table = layui.table
+                , laypage = layui.laypage
+                , $ = layui.$;            //使用jQuery;
+            form.render();//表单
         });
 
-    });
+        $(function () {
+            //页面一开始就加载表格
+            loadAllFirstGoods();
+        });
+
+        function loadAllFirstGoods() {
+            layui.use('laypage', function () {
+                var laypage = layui.laypage;
+                var url = "goods/first_goods_list";
+                var config = {page: 1, pageSize: 3};//配置初始值
+                //分页
+                $.getJSON(url, config, function (res) {
+                    laypage.render({
+                        elem: 'page_first_goods',
+                        count: res.total, //总条数
+                        limit: config.pageSize, //每页条数
+                        limits: [3, 5, 10],
+                        layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'],
+                        jump: function (obj, first) {//跳页触发
+                            if (!first) { //首次则不进入
+                                config.page = obj.curr;
+                                config.pageSize = obj.limit;
+                                layer.msg('第'+ obj.curr +'页');
+                                getFirstGoodsListByPage(url, config);
+                            }
+                        }
+                    });
+                    parseFirstGoodsList(res, config.page);
+                });
+            });
+        }
+
+        //点击页数从后台获取数据
+        function getFirstGoodsListByPage(url, config) {
+            $.getJSON(url, config, function (res) {
+                parseFirstGoodsList(res, config.page);
+            });
+        }
+
+        //解析数据，currPage参数为预留参数，当删除一行刷新列表时，可以记住当前页而不至于显示到首页去
+        function parseFirstGoodsList(res, currPage) {
+            var content = "";
+            $.each(res.rows, function (i, o) {
+                var obj=JSON.stringify(o);
+                content += "<tr>";
+                content += "<td>" + o.id + "</td>";
+                content += "<td>"+ o.goodsName +"</td>";
+                content += "<td>" + o.firstProduct.typeName + "</td>";
+                content += "<td>" + o.firstProduct.goodsBrand.brandName + "</td>";
+                content += "<td>" + o.firstProduct.type + "</td>";
+                content += "<td>" + o.firstProduct.color+ "</td>";
+                content += "<td><button class='layui-btn'>查看</button>" +
+                    "<button class='layui-btn'>修改</button>";// onclick='detail("+obj+")'
+                content += "</tr>";
+            });
+            $('#my_first_goods_tbody').html(content);
+        }
+
+       /* //点击创建一类商品时触发
+        function creatFirstGoodsWithProduct(obj){
+            /!* layer.msg(obj.id+"--"+obj.typeName);//获得含当前行所有信息的对象*!/
+            var firstGoods=JSON.stringify(obj);
+            $.post('goods/creat_first_goods',{"firstGoods":firstGoods}, function(data) {
+                $('#ajax_replace').html(data);
+            },"html")
+
+        }*/
     </script>
-</div>
 </body>
 </html>

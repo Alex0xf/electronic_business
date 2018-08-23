@@ -13,12 +13,11 @@
     <result column="market_price" property="marketPrice" jdbcType="DOUBLE" />
     <result column="sales_price" property="salesPrice" jdbcType="DOUBLE" />
     <result column="is_buy" property="isBuy" jdbcType="INTEGER" />
+
     <association property="firstProduct" javaType="com.javasm.goods.model.FirstProduct"
                  resultMap="com.javasm.goods.dao.FirstProductMapper.BaseResultMap">
     </association>
   </resultMap>
-
-
 
 
   <sql id="Base_Column_List" >

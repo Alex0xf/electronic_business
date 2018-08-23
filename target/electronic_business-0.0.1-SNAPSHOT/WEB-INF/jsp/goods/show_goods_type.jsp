@@ -35,6 +35,9 @@
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
                 <legend>商品与赠品管理系统</legend>
             </fieldset>
+
+            <!--ajax刷新的部分-->
+            <div id="ajax_replace" >
             <!--面包屑-->
             <blockquote class="layui-elem-quote">
                <span class="layui-breadcrumb">
@@ -47,108 +50,106 @@
 
             <!--表格-->
             <%-- <table class="layui-hide" id="test" lay-filter="demo"></table>--%>
-            <div id="my_first_product_table">
-                <table class="layui-table" id="demo" lay-filter="test">
-                    <%--  <%@include file="../common/table_first_product.jsp"%>--%>
-                </table>
+                <div id="my_goods_type_table">
+                    <table class="layui-table" id="goods_type" lay-filter="test">
+                        <colgroup>
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>类型id</th>
+                            <th>类型名称</th>
+                            <th>类型名称</th>
+                            <th>类型名称</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id="my_goods_type_tbody"></tbody>
+                    </table>
                 <!--分页-->
-                <%--   <div id="pageDemo">  </div>--%>
+                   <div id="page_goods_type">  </div>
+            </div>
             </div>
             <!-- 底部固定区域 -->
             <%@include file="../common/footer.jsp"%>
+
         </div>
-        <script src="/layui/js/layui.js"></script>
-        <script type="text/html" id="barDemo">
-            <a class="layui-btn layui-btn-xs" lay-event="edit">修改</a>
-            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-
-        </script>
-        <script>
-            //JavaScript代码区域
-            layui.use(['layer', 'form', 'element','table','laypage'], function(){
-                var layer = layui.layer
-                    ,form = layui.form//只有执行了这一步，部分表单元素才会自动修饰成功
-                    ,element = layui.element
-                    ,table=layui.table
-                    ,laypage=layui.laypage
-                    , $ = layui.$;            //使用jQuery;
-
-                //JavaScript代码区域
-
-                form.render();//表单
-
-                //分页
-                laypage.render({
-                    elem: 'pageDemo' //分页容器的id
-                    ,count:12  //总页数
-                    ,skin: '#1E9FFF' //自定义选中色值
-                    ,skip: true //开启跳页
-                    ,limit:5
-                    ,limits:[5, 10, 20, 30]
-                    ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
-                    ,jump: function(obj, first){
-                        console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-                        console.log(obj.limit); //得到每页显示的条数
-                        if(!first){
-                            layer.msg('第'+ obj.curr +'页');
-                        }
-                        $.get("goods/goods_brand",{pageNum:obj.curr,pageSize:obj.limit},function(data){
-
-                        },"html");
-                    }
-                });
-
-                //执行一个 table 实例
-                table.render({
-                    elem: '#demo'
-                    ,height: 400
-                    ,url: 'goods/goods_type_ajax' //数据接口
-                    ,page:laypage //开启分页
-                    ,limit:5
-                    ,limits:[5, 10, 20, 30]
-                    ,cols: [[ //表头
-                        {field: 'id', title: '类型id', sort: true, fixed: 'left'}
-                        ,{field: 'typeName', title: '类型名称'}
-                        ,{field: 'typeAddress', title: '类型网站',sort: true}
-                        ,{field: 'typeDescribe', title: '类型描述'}
-                        ,{fixed: 'right',align:'center', toolbar: '#barDemo'}
-                        //{field: '', title: '操作', width: 150}
-
-
-                        /* ,{field: 'brandId', title: '品牌id', width: 170}*/
-                    ]]
-                    ,request: {
-                        pageName: 'pageNum' //页码的参数名称，默认：page
-                        ,limitName: 'pageSize' //每页数据量的参数名，默认：limit
-                    }
-                });
-
-                table.on('tool(test)', function(obj){ //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
-                    var data = obj.data; //获得当前行数据
-                    var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
-                    var tr = obj.tr; //获得当前行 tr 的DOM对象
-
-                    if(layEvent === 'del'){ //删除
-                        layer.confirm('真的删除行么', function(index){
-                            obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
-                            layer.close(index);
-                            //向服务端发送删除指令
-                        });
-                    } else if(layEvent === 'edit'){ //编辑
-                        //do something
-
-                        //同步更新缓存对应的值
-                        obj.update({
-                            username: '123'
-                            ,title: 'xxx'
-                        });
-                    }
-                });
-
-
-
-            });
-        </script>
     </div>
+        <script src="/layui/js/layui.js"></script>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery.form.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            layui.use(['layer', 'form', 'element', 'table', 'laypage'], function () {
+                var layer = layui.layer
+                    , form = layui.form
+                    , element = layui.element
+                    , table = layui.table
+                    , laypage = layui.laypage
+                    , $ = layui.$;            //使用jQuery;
+                form.render();//表单
+            });
+
+            $(function () {
+                //页面一开始就加载表格
+                loadAllGoodsType();
+            });
+
+            function loadAllGoodsType() {
+                layui.use('laypage', function () {
+                    var laypage = layui.laypage;
+                    var url = "goods/goods_type_list";
+                    var config = {page: 1, pageSize: 3};//配置初始值
+                    //分页
+                    $.getJSON(url, config, function (res) {
+                        laypage.render({
+                            elem: 'page_goods_type',
+                            count: res.total, //总条数
+                            limit: config.pageSize, //每页条数
+                            limits: [3, 5, 10],
+                            layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip'],
+                            jump: function (obj, first) {//跳页触发
+                                if (!first) { //首次则不进入
+                                    config.page = obj.curr;
+                                    config.pageSize = obj.limit;
+                                    layer.msg('第'+ obj.curr +'页');
+                                    getGoodsTypeListByPage(url, config);
+                                }
+                            }
+                        });
+                        parseGoodsTypeList(res, config.page);
+                    });
+                });
+            }
+
+            //点击页数从后台获取数据
+            function getGoodsTypeListByPage(url, config) {
+                $.getJSON(url, config, function (res) {
+                    parseGoodsTypeList(res, config.page);
+                });
+            }
+
+            //解析数据，currPage参数为预留参数，当删除一行刷新列表时，可以记住当前页而不至于显示到首页去
+            function parseGoodsTypeList(res, currPage) {
+                var content = "";
+                $.each(res.rows, function (i, o) {
+                    var obj=JSON.stringify(o);
+                    content += "<tr>";
+                    content += "<td>" + o.id + "</td>";
+                    content += "<td>"+ o.typeName +"</td>";
+                    content += "<td>" + o.typeAddress + "</td>";
+                    content += "<td>" + o.typeDescribe + "</td>";
+                    content += "<td><button class='layui-btn'>修改</button>" +
+                        "<button class='layui-btn'>删除</button>";
+                    content += "</tr>";
+                });
+                $('#my_goods_type_tbody').html(content);
+            }
+
+        </script>
+
 </body>
 </html>
