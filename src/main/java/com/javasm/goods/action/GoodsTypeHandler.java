@@ -114,7 +114,48 @@ public class GoodsTypeHandler {
                 return mv;
             }
         }
+    }
 
+    @RequestMapping("add_goods_type")
+    public ModelAndView jumpAddGoodsPage(HttpServletRequest request) {
+        ModelAndView mv=new ModelAndView();
+        String jumpPage=request.getParameter("jumpPage");
+        int i=0;
+        switch (jumpPage){
+            case "add_goods_type":{
+                //跳转到新增类型属性页面
+                mv.setViewName("goods/add_goods_type");
+                return mv;
+            } case "add_goods_type_check":{
+                //验证新增的类型属性是否合法
+                //拿值
+                int bid=1;
+                int belong=0;
+                String goodsType_typeName=request.getParameter("goodsType_typeName");
+                String goodsType_typeDescribe=request.getParameter("goodsType_typeDescribe");
+                if(request.getParameter("bid")!=null&!request.getParameter("bid").isEmpty()){
+                    bid=Integer.parseInt(request.getParameter("bid"));
+                }
+                if(request.getParameter("belong")!=null&!request.getParameter("belong").isEmpty()){
+                    belong=Integer.parseInt(request.getParameter("belong"));
+                }
+                //如果合法 更新
+                GoodsType goodsType=new GoodsType(bid,goodsType_typeName,goodsType_typeDescribe,belong);
+                i=goodsTypeService.insertSelective(goodsType);
+                if(i>0){
+                    mv.addObject("mssg","新增成功");
+                    log.debug("新增成功");
+                }else{
+                    mv.addObject("mssg","新增失败");
+                    log.debug("新增失败");
+                }
+                mv.setViewName("goods/show_goods_type");
+                return mv;
 
+            } default: {
+                mv.setViewName("goods/show_goods_type");
+                return mv;
+            }
+        }
     }
 }

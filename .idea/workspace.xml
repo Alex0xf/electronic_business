@@ -7,42 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e26c4ab-7b1d-4acd-81ac-855b2e52e741" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_brand.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_type.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/goods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_goods_type.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/FirstGoodsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/FirstGoodsHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/GoodsTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/GoodsTypeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/GoodsTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/GoodsTypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsTypeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstGoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstGoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstGoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/FirstGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/FirstGoods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IFirstGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IFirstGoodsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/500.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/500.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/left_side_goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/left_side_goods.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/creat_first_goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_first_goods.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_brand.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_brand.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/js/goods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/action/FirstGoodsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/action/FirstGoodsHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/action/GoodsTypeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/action/GoodsTypeHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/mapper/GoodsTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/mapper/GoodsTypeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/mapper/FirstGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/mapper/FirstGoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/model/FirstGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/model/FirstGoods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/model/GoodsType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/model/GoodsType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/IFirstGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/IFirstGoodsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/IGoodsTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/IGoodsTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/impl/FirstGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/impl/FirstGoodsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/impl/GoodsTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/javasm/goods/service/impl/GoodsTypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/action/FirstGoodsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/action/FirstGoodsHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/action/GoodsTypeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/action/GoodsTypeHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/mapper/GoodsTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/mapper/GoodsTypeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/mapper/FirstGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/mapper/FirstGoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/model/FirstGoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/model/FirstGoods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/model/GoodsType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/model/GoodsType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/IFirstGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/IFirstGoodsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/IGoodsTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/IGoodsTypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/impl/FirstGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/impl/FirstGoodsServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/impl/GoodsTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/classes/com/javasm/goods/service/impl/GoodsTypeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/common/500.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/common/500.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/common/left_side_goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/common/left_side_goods.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/creat_first_goods.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/first_product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/first_product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/show_goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/show_goods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/show_goods_brand.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/show_goods_brand.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/show_goods_type.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/goods/show_goods_type.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/WEB-INF/jsp/js/goods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/logs/allOut.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/electronic_business-0.0.1-SNAPSHOT/logs/allOut.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,47 +62,44 @@
       <file leaf-file-name="show_goods_type.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2104">
-              <caret line="148" column="54" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="54" />
+            <state relative-caret-position="402">
+              <caret line="166" column="81" selection-start-line="166" selection-start-column="50" selection-end-line="166" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsTypeHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/action/GoodsTypeHandler.java">
+      <file leaf-file-name="add_first_goods.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_first_goods.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="100" column="62" selection-start-line="100" selection-start-column="62" selection-end-line="100" selection-end-column="62" />
+            <state relative-caret-position="464">
+              <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsTypeMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsTypeMapper.xml">
+      <file leaf-file-name="add_goods_type.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_goods_type.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="62" column="11" lean-forward="true" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+            <state relative-caret-position="275">
+              <caret line="19" column="114" selection-start-line="19" selection-start-column="105" selection-end-line="19" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IProductService.java">
+      <file leaf-file-name="first_product.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="69" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="163" column="71" selection-start-line="163" selection-start-column="71" selection-end-line="163" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update_goods_type.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_type.jsp">
+      <file leaf-file-name="FirstGoodsServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="28" column="79" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+            <state relative-caret-position="505">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -134,6 +132,8 @@
       <find>page1</find>
       <find>my_goods_type_tbody</find>
       <find>Brand</find>
+      <find>debug</find>
+      <find>bid</find>
     </findStrings>
     <replaceStrings>
       <replace>loadAllFirstProduct()</replace>
@@ -157,11 +157,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/left_side.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/SecondGoodsHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstGoodsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/FirstGoods.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsBrand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/FirstProduct.java" />
@@ -176,16 +172,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext_mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/table_first_product.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstProductMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstProductMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstGoodsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/ProductHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IFirstGoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsBrandMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/GoodsBrandMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsBrandServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsBrandService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/GoodsBrandHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/creat_first_goods.jsp" />
@@ -196,18 +188,26 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_brand.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/500.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/FirstGoodsHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_brand.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_type.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsTypeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsTypeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/GoodsTypeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstGoodsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IFirstGoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_goods_type.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/FirstGoodsHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsTypeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/action/GoodsTypeHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/model/FirstGoods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstProductMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstGoodsMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_first_goods.jsp" />
       </list>
     </option>
   </component>
@@ -369,31 +369,7 @@
               <item name="electronic_business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="electronic_business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="electronic_business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="electronic_business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="electronic_business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="electronic_business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="electronic_business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="electronic_business" type="b2602c69:ProjectViewProjectNode" />
@@ -411,16 +387,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="electronic_business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="electronic_business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="electronic_business" type="b2602c69:ProjectViewProjectNode" />
@@ -636,12 +602,12 @@
       <workItem from="1534856207472" duration="9477000" />
       <workItem from="1534868732739" duration="5188000" />
       <workItem from="1534915352510" duration="24682000" />
-      <workItem from="1535003853009" duration="56718000" />
+      <workItem from="1535003853009" duration="66236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193122000" />
+    <option name="totallyTimeSpent" value="202640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,11 +619,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.15938166" side_tool="true" visible="true" weight="0.18851571" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.15938166" side_tool="true" visible="true" weight="0.07367281" />
       <window_info anchor="bottom" id="Application Servers" order="11" sideWeight="0.49947917" weight="0.3284055" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
       <window_info anchor="right" id="CDI" order="10" />
@@ -669,7 +635,7 @@
       <window_info id="Structure" order="6" sideWeight="0.5011013" side_tool="true" weight="0.24338943" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info active="true" anchor="bottom" x="224" y="342" width="1472" height="355" id="Debug" order="7" sideWeight="0.8406183" visible="true" weight="0.18851571" />
+      <window_info active="true" anchor="bottom" x="224" y="342" width="1472" height="355" id="Debug" order="7" sideWeight="0.8406183" visible="true" weight="0.07367281" />
       <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49307036" weight="0.17659806" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
@@ -680,7 +646,7 @@
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49639422" weight="0.16017798" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" x="480" y="364" width="959" height="312" id="Terminal" order="3" sideWeight="0.49947917" type="WINDOWED" weight="0.32946146" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49889868" visible="true" weight="0.26492536" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49889868" visible="true" weight="0.24626866" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.32995737" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32946146" />
@@ -706,27 +672,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.1.0.RELEASE/spring-core-4.1.0.RELEASE.jar!/org/springframework/util/ClassUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/exception/AllExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/redis/RedisDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-837">
@@ -783,38 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstGoodsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstGoodsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="176" column="73" lean-forward="true" selection-start-line="176" selection-start-column="73" selection-end-line="176" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IFirstGoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -839,13 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -937,24 +847,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="84" column="2" lean-forward="true" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/500.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/action/ProductHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710">
-          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -972,20 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/creat_first_goods.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="55" lean-forward="true" selection-end-line="218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/action/FirstGoodsHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_brand.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1000,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1017,20 +892,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsTypeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_type.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="14" />
+          <caret line="16" column="82" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/model/GoodsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsTypeServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsTypeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="100">
+          <caret line="62" column="11" lean-forward="true" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/action/ProductHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstGoodsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IFirstGoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1044,31 +950,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/GoodsTypeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/GoodsTypeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="62" column="11" lean-forward="true" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+        <state relative-caret-position="324">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/update_goods_type.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/IGoodsTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="28" column="79" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2104">
-          <caret line="148" column="54" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="54" />
+        <state relative-caret-position="216">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/action/GoodsTypeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="100" column="62" selection-start-line="100" selection-start-column="62" selection-end-line="100" selection-end-column="62" />
+        <state relative-caret-position="144">
+          <caret line="143" column="50" selection-start-line="143" selection-start-column="50" selection-end-line="143" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/show_goods_type.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="166" column="81" selection-start-line="166" selection-start-column="50" selection-end-line="166" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/mapper/FirstGoodsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/SecondGoodsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/dao/FirstProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/model/FirstGoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/action/FirstGoodsHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/javasm/goods/service/impl/FirstGoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_goods_type.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="19" column="114" selection-start-line="19" selection-start-column="105" selection-end-line="19" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/first_product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="163" column="71" selection-start-line="163" selection-start-column="71" selection-end-line="163" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goods/add_first_goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
         </state>
       </provider>
     </entry>

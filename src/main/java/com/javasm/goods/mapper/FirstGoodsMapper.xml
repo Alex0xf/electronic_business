@@ -6,7 +6,6 @@
     <result column="goods_name" property="goodsName" jdbcType="VARCHAR" />
     <result column="num" property="num" jdbcType="INTEGER" />
     <result column="goods_tid" property="goodsTid" jdbcType="INTEGER" />
-    <result column="goods_bid" property="goodsBid" jdbcType="INTEGER" />
     <result column="attribute" property="attribute" jdbcType="INTEGER" />
     <result column="first_pid" property="firstPid" jdbcType="INTEGER" />
     <result column="buy_price" property="buyPrice" jdbcType="DOUBLE" />
@@ -21,29 +20,33 @@
 
 
   <sql id="Base_Column_List" >
-    id, goods_name, num, goods_tid, goods_bid, attribute, first_pid, buy_price, market_price, 
+    id, goods_name, num, goods_tid, attribute, first_pid, buy_price, market_price,
     sales_price, is_buy
   </sql>
+
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     from t_first_goods
     where id = #{id,jdbcType=INTEGER}
   </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from t_first_goods
     where id = #{id,jdbcType=INTEGER}
   </delete>
+
   <insert id="insert" parameterType="com.javasm.goods.model.FirstGoods" >
     insert into t_first_goods (id, goods_name, num, 
-      goods_tid, goods_bid, attribute, 
+      goods_tid, attribute,
       first_pid, buy_price, market_price, 
       sales_price, is_buy)
     values (#{id,jdbcType=INTEGER}, #{goodsName,jdbcType=VARCHAR}, #{num,jdbcType=INTEGER}, 
-      #{goodsTid,jdbcType=INTEGER}, #{goodsBid,jdbcType=INTEGER}, #{attribute,jdbcType=INTEGER}, 
+      #{goodsTid,jdbcType=INTEGER}, #{attribute,jdbcType=INTEGER},
       #{firstPid,jdbcType=INTEGER}, #{buyPrice,jdbcType=DOUBLE}, #{marketPrice,jdbcType=DOUBLE}, 
       #{salesPrice,jdbcType=DOUBLE}, #{isBuy,jdbcType=INTEGER})
   </insert>
+
   <insert id="insertSelective" parameterType="com.javasm.goods.model.FirstGoods" >
     insert into t_first_goods
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -58,9 +61,6 @@
       </if>
       <if test="goodsTid != null" >
         goods_tid,
-      </if>
-      <if test="goodsBid != null" >
-        goods_bid,
       </if>
       <if test="attribute != null" >
         attribute,
@@ -94,9 +94,6 @@
       <if test="goodsTid != null" >
         #{goodsTid,jdbcType=INTEGER},
       </if>
-      <if test="goodsBid != null" >
-        #{goodsBid,jdbcType=INTEGER},
-      </if>
       <if test="attribute != null" >
         #{attribute,jdbcType=INTEGER},
       </if>
@@ -117,6 +114,7 @@
       </if>
     </trim>
   </insert>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.javasm.goods.model.FirstGoods" >
     update t_first_goods
     <set >
@@ -128,9 +126,6 @@
       </if>
       <if test="goodsTid != null" >
         goods_tid = #{goodsTid,jdbcType=INTEGER},
-      </if>
-      <if test="goodsBid != null" >
-        goods_bid = #{goodsBid,jdbcType=INTEGER},
       </if>
       <if test="attribute != null" >
         attribute = #{attribute,jdbcType=INTEGER},
@@ -153,12 +148,12 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
+
   <update id="updateByPrimaryKey" parameterType="com.javasm.goods.model.FirstGoods" >
     update t_first_goods
     set goods_name = #{goodsName,jdbcType=VARCHAR},
       num = #{num,jdbcType=INTEGER},
       goods_tid = #{goodsTid,jdbcType=INTEGER},
-      goods_bid = #{goodsBid,jdbcType=INTEGER},
       attribute = #{attribute,jdbcType=INTEGER},
       first_pid = #{firstPid,jdbcType=INTEGER},
       buy_price = #{buyPrice,jdbcType=DOUBLE},

@@ -51,6 +51,7 @@
             <!--表格-->
             <%-- <table class="layui-hide" id="test" lay-filter="demo"></table>--%>
                 <div id="my_goods_type_table">
+                    <button class='layui-btn layui-btn-normal'  onclick='addOneGoodsType()'>新增商品类型</button>
                     <table class="layui-table" id="goods_type" lay-filter="test">
                         <colgroup>
                             <col width="150">
@@ -148,29 +149,33 @@
                     content += "<td>"+ o.typeName +"</td>";
                     content += "<td>" + o.typeDescribe + "</td>";
                     content += "<td><button class='layui-btn'  onclick='updateGoodsType("+obj+")'>修改</button>" +
-                        "<button class='layui-btn' onclick='delGoodsType("+obj+")'>删除</button>";
+                        "<button class='layui-btn layui-btn-danger' onclick='delGoodsType("+obj+")'>删除</button>";
                     content += "</tr>";
                 });
                 $('#my_goods_type_tbody').html(content);
             }
 
-            function delGoodsType(obj){
+            function delGoodsType(obj){//删除
                 layer.confirm('真的删除行么', function(index){
                     layer.close();
                     window.location.href="goods/del_goods_type?deleteId="+obj.id;
                 });
             }
-            function updateGoodsType(obj){
+            function updateGoodsType(obj){//更新
                 var type=JSON.stringify(obj);
 
                 $.post('goods/update_goods_type',{"jumpPage":"update_goods_type","goodsType":type}, function(data) {
                     //layer.msg(product);
                    $('#ajax_replace').html(data);
                 },"html");
-
-
             }
 
+            function addOneGoodsType(){//新增
+                $.post('goods/add_goods_type',{"jumpPage":"add_goods_type"}, function(data) {
+                    //layer.msg(product);
+                    $('#ajax_replace').html(data);
+                },"html");
+            }
         </script>
 
 </body>

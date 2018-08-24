@@ -20,6 +20,5 @@ public interface FirstProductMapper {
 
     List<FirstProduct> selectProductList();
 
-   // List<FirstProduct> selectProductListLimit(@Param("pageNum")int pageNum,@Param("pageSize")int pageSize);
-    //List<FirstProduct> selectProductListLimit();
+
 }

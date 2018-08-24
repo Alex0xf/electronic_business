@@ -6,7 +6,7 @@ import com.javasm.goods.model.GoodsType;
 public interface IGoodsTypeService {
 
     //新增一条商品类型记录
-    int insert(GoodsType goodsType);
+    int insertSelective(GoodsType goodsType);
 
     //按照id删除商品类型
    int deleteByPrimaryKey(int id);

@@ -161,7 +161,7 @@
         function creatFirstGoodsByProduct(obj){
            /* layer.msg(obj.id+"--"+obj.typeName);//获得含当前行所有信息的对象*/
            var product=JSON.stringify(obj);
-            $.post('goods/creat_first_goods',{"product":product}, function(data) {
+            $.post('goods/add_first_goods',{"jumpPage":"add_first_goods","product":product}, function(data) {
                 //layer.msg(product);
                 $('#ajax_replace').html(data);
                 },"html")

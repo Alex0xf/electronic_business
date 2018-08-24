@@ -9,6 +9,8 @@ public class GoodsType {
 
     private String typeDescribe;
 
+    private Integer belong;//属于一类：0，二类：1
+
     public GoodsType() {
     }
 
@@ -18,11 +20,19 @@ public class GoodsType {
         this.typeName = typeName;
         this.typeDescribe = typeDescribe;
     }
-
+    //用于更改类型信息
     public GoodsType(Integer id, String typeName, String typeDescribe) {
         this.id = id;
         this.typeName = typeName;
         this.typeDescribe = typeDescribe;
+    }
+
+    //用于新增类型记录 不需要id
+    public GoodsType(Integer bid, String typeName, String typeDescribe, Integer belong) {
+        this.bid = bid;
+        this.typeName = typeName;
+        this.typeDescribe = typeDescribe;
+        this.belong = belong;
     }
 
     @Override
@@ -32,7 +42,16 @@ public class GoodsType {
                 ", bid=" + bid +
                 ", typeName='" + typeName + '\'' +
                 ", typeDescribe='" + typeDescribe + '\'' +
+                ", belong=" + belong +
                 '}';
+    }
+
+    public Integer getBelong() {
+        return belong;
+    }
+
+    public void setBelong(Integer belong) {
+        this.belong = belong;
     }
 
     public Integer getId() {

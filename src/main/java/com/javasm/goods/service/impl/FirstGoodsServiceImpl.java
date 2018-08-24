@@ -25,4 +25,12 @@ public class FirstGoodsServiceImpl implements IFirstGoodsService {
         return new PageInfo(list);
     }
 
+    //新增一类商品信息
+    @Override
+    public int insertSelective(FirstGoods firstGoods) {
+        if(firstGoods!=null){
+            return firstGoodsDao.insertSelective(firstGoods);
+        }
+        return 0;
+    }
 }

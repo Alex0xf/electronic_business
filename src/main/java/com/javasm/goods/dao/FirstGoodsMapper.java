@@ -9,7 +9,7 @@ public interface FirstGoodsMapper {
 
     int insert(FirstGoods record);
 
-    int insertSelective(FirstGoods record);
+    int insertSelective(FirstGoods firstGoods);
 
     FirstGoods selectByPrimaryKey(Integer id);
 

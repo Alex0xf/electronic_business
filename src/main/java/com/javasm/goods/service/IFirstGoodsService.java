@@ -8,7 +8,9 @@ import java.util.List;
 
 public interface IFirstGoodsService {
 
-    //List<FirstGoods> selectFirstGoodsListWithProduct();
-
+    //查询一类商品信息
     PageInfo<FirstGoods> selectFirstGoodsListWithProduct(int page, int pageSize);
+
+    //新增一类产品信息
+    int insertSelective(FirstGoods firstGoods);
 }

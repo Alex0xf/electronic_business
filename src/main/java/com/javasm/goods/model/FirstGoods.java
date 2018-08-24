@@ -5,7 +5,7 @@ public class FirstGoods {
     private String goodsName;
     private Integer num;
     private Integer goodsTid;//一类商品类型id
-    private Integer goodsBid;//一类商品品牌id
+    //private Integer goodsBid;//一类商品品牌id 一类产品含品牌子类 因此一类商品不需要
     private Integer attribute;//属性：0商品 1赠品 （默认是商品）
     private Integer firstPid;//对应的一类产品
     private Double buyPrice;//采购价格
@@ -15,17 +15,29 @@ public class FirstGoods {
 
     private FirstProduct firstProduct;//一类产品
     private GoodsType goodsType;//商品类型
-//    private  GoodsBrand goodsBrand;//商品品牌
 
     public FirstGoods() {
     }
 
-    public FirstGoods(Integer id, String goodsName, Integer num, Integer goodsTid, Integer goodsBid, Integer attribute, Integer firstPid, Double buyPrice, Double marketPrice, Double salesPrice, Integer isBuy, FirstProduct firstProduct, GoodsType goodsType) {
+    //在数据库中新增一类商品用
+    public FirstGoods(String goodsName, Integer num, Integer goodsTid,Integer attribute, Integer firstPid, Double buyPrice, Double marketPrice, Double salesPrice, Integer isBuy) {
+        this.goodsName = goodsName;
+        this.num = num;
+        this.goodsTid = goodsTid;
+        this.attribute = attribute;
+        this.firstPid = firstPid;
+        this.buyPrice = buyPrice;
+        this.marketPrice = marketPrice;
+        this.salesPrice = salesPrice;
+        this.isBuy = isBuy;
+    }
+
+    public FirstGoods(Integer id, String goodsName, Integer num, Integer goodsTid,Integer attribute, Integer firstPid, Double buyPrice, Double marketPrice, Double salesPrice, Integer isBuy, FirstProduct firstProduct, GoodsType goodsType) {
         this.id = id;
         this.goodsName = goodsName;
         this.num = num;
         this.goodsTid = goodsTid;
-        this.goodsBid = goodsBid;
+        //this.goodsBid = goodsBid;
         this.attribute = attribute;
         this.firstPid = firstPid;
         this.buyPrice = buyPrice;
@@ -43,7 +55,7 @@ public class FirstGoods {
                 ", goodsName='" + goodsName + '\'' +
                 ", num=" + num +
                 ", goodsTid=" + goodsTid +
-                ", goodsBid=" + goodsBid +
+//                ", goodsBid=" + goodsBid +
                 ", attribute=" + attribute +
                 ", firstPid=" + firstPid +
                 ", buyPrice=" + buyPrice +
@@ -102,14 +114,6 @@ public class FirstGoods {
 
     public void setGoodsTid(Integer goodsTid) {
         this.goodsTid = goodsTid;
-    }
-
-    public Integer getGoodsBid() {
-        return goodsBid;
-    }
-
-    public void setGoodsBid(Integer goodsBid) {
-        this.goodsBid = goodsBid;
     }
 
     public Integer getAttribute() {

@@ -36,7 +36,7 @@ public class GoodsTypeServiceImpl implements IGoodsTypeService {
 
     //新增一条商品类型记录
     @Override
-    public int insert(GoodsType goodsType) {
+    public int insertSelective(GoodsType goodsType) {
         if(goodsType!=null){
             return goodsTypeDao.insertSelective(goodsType);
         }
