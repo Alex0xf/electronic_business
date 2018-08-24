@@ -99,6 +99,9 @@
         $(function () {
             //页面一开始就加载表格
             loadAllFirstGoods();
+            if("${mssg}"!=""){
+                alert('${mssg}');
+            }
         });
 
         function loadAllFirstGoods() {
@@ -147,22 +150,21 @@
                 content += "<td>" + o.firstProduct.goodsBrand.brandName + "</td>";
                 content += "<td>" + o.firstProduct.type + "</td>";
                 content += "<td>" + o.firstProduct.color+ "</td>";
-                content += "<td><button class='layui-btn'>查看</button>" +
+                content += "<td><button class='layui-btn' onclick='firstGoodsDetail("+obj+")'>查看</button>" +
                     "<button class='layui-btn'>修改</button>";// onclick='detail("+obj+")'
                 content += "</tr>";
             });
             $('#my_first_goods_tbody').html(content);
         }
 
-       /* //点击创建一类商品时触发
-        function creatFirstGoodsWithProduct(obj){
-            /!* layer.msg(obj.id+"--"+obj.typeName);//获得含当前行所有信息的对象*!/
+        //查看对应商品的详细信息
+        function firstGoodsDetail(obj){
             var firstGoods=JSON.stringify(obj);
-            $.post('goods/creat_first_goods',{"firstGoods":firstGoods}, function(data) {
+            $.post('goods/first_goods',{"jumpPage":"first_goods_detail","firstGoods":firstGoods}, function(data) {
                 $('#ajax_replace').html(data);
             },"html")
 
-        }*/
+        }
     </script>
 </body>
 </html>

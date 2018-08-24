@@ -77,7 +77,6 @@ public class GoodsTypeHandler {
         ModelAndView mv=new ModelAndView();
         Object type= null;
         String jumpPage=request.getParameter("jumpPage");
-        log.debug("jumpPage:xxxx   "+jumpPage);
         int i=0;
         switch (jumpPage){
             case "update_goods_type":{

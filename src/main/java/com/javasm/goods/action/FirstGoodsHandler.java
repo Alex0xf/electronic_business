@@ -30,13 +30,46 @@ public class FirstGoodsHandler {
     IFirstGoodsService firstGoodsService;
 
     //显示页面
-    @RequestMapping("first_goods")
+    /*@RequestMapping("first_goods")
     public String jumpFirstGoodsPage(Model model) {
 
         return "goods/show_goods";
+    }*/
+    @RequestMapping("first_goods")
+    public ModelAndView jumpFirstGoodsPage(HttpServletRequest request) {
+        ModelAndView mv = new ModelAndView();
+        String jumpPage = request.getParameter("jumpPage");
+        log.debug("jumpPage____"+jumpPage);
+        int i = 0;
+        if (jumpPage != null) {
+            switch (jumpPage) {
+                case "show_goods": {
+                    mv.setViewName("goods/show_goods");
+                    return mv;
+
+                }case"first_goods_detail":{//跳转到详细信息页面
+                    //跳转到更新类型属性页面 将当前类型id的属性传过去
+                    try {
+                        Object firstGoods = JSON.parseObject(request.getParameter("firstGoods"));
+                        mv.addObject("firstGoods",firstGoods);
+                    } catch (Exception e) {
+                        log.debug("request.getParameter(\"firstGoods\")为空");
+                    }
+                        mv.setViewName("goods/first_goods_detail");
+                        return mv;
+                }
+                default: {
+                    mv.setViewName("goods/show_goods");
+                    return mv;
+                }
+            }
+        }
+        mv.setViewName("goods/show_goods");
+        return mv;
+
     }
 
-    //返回数据 分页
+    //获得分页所需的数据 分页
     @RequestMapping("/first_goods_list")
     @ResponseBody
     public Map<String, Object> selectALLFirstGoods(int page, int pageSize) {
@@ -51,7 +84,7 @@ public class FirstGoodsHandler {
 
 
     @RequestMapping("add_first_goods")
-    public ModelAndView jumpAddFirstGoodsPage(HttpServletRequest request, Model model) {
+    public ModelAndView jumpAddFirstGoodsPage(HttpServletRequest request) {
         ModelAndView mv = new ModelAndView();
         String jumpPage = request.getParameter("jumpPage");
         int i = 0;
@@ -59,42 +92,44 @@ public class FirstGoodsHandler {
             case "add_first_goods": {
                 //跳转到新增一类商品页面
                 //传递一类产品的属性
-                Object product=JSON.parseObject(request.getParameter("product"));
-                if(product!=null){
-                    model.addAttribute("product",product);
-                }else{
-                    model.addAttribute("product","xxx");
+                Object product = JSON.parseObject(request.getParameter("product"));
+                if (product != null) {
+                    mv.addObject("product", product);
+                } else {
+                    mv.addObject("product", "xxx");
                 }
                 mv.setViewName("goods/add_first_goods");
                 return mv;
-            }   case "add_first_goods_check": {
+            }
+            case "add_first_goods_check": {
                 //验证新增的一类商品是否合法
                 //拿值
-                String goodsName=request.getParameter("goods_name");//商品名称
-                int num=Integer.parseInt(request.getParameter("num"));//最低库存
-                int goodsTid=Integer.parseInt(request.getParameter("goods_tid"));//一类商品类型id
-                int attribute=0;
-                int firstPid=Integer.parseInt(request.getParameter("product_id"));//对应的一类产品id
-                Double buyPrice=Double.parseDouble(request.getParameter("buy_price"));//采购价
-                Double marketPrice=Double.parseDouble(request.getParameter("market_price"));//市场价
-                Double salesPrice=Double.parseDouble(request.getParameter("sales_price"));//商城价
-                int isBuy=Integer.parseInt(request.getParameter("is_buy"));//是否可采购 0可采购（默认） 1不可
+                String goodsName = request.getParameter("goods_name");//商品名称
+                int num = Integer.parseInt(request.getParameter("num"));//最低库存
+                int goodsTid = Integer.parseInt(request.getParameter("goods_tid"));//一类商品类型id
+                int attribute = 0;
+                int firstPid = Integer.parseInt(request.getParameter("product_id"));//对应的一类产品id
+                Double buyPrice = Double.parseDouble(request.getParameter("buy_price"));//采购价
+                Double marketPrice = Double.parseDouble(request.getParameter("market_price"));//市场价
+                Double salesPrice = Double.parseDouble(request.getParameter("sales_price"));//商城价
+                int isBuy = Integer.parseInt(request.getParameter("is_buy"));//是否可采购 0可采购（默认） 1不可
                 //将值放入对象
-                FirstGoods firstGoods=new FirstGoods(goodsName,num,goodsTid,attribute,firstPid,buyPrice,marketPrice,salesPrice,isBuy);
-                if(firstGoods!=null){
+                FirstGoods firstGoods = new FirstGoods(goodsName, num, goodsTid, attribute, firstPid, buyPrice, marketPrice, salesPrice, isBuy);
+                if (firstGoods != null) {
                     //如果合法 更新
-                    i=firstGoodsService.insertSelective(firstGoods);
-                    if(i>0){
-                        mv.addObject("mssg","新增成功");
+                    i = firstGoodsService.insertSelective(firstGoods);
+                    if (i > 0) {
+                        mv.addObject("mssg", "新增成功");
                         log.debug("新增成功");
-                    }else{
-                        mv.addObject("mssg","新增失败");
+                    } else {
+                        mv.addObject("mssg", "新增失败");
                         log.debug("新增失败");
                     }
                 }
                 mv.setViewName("goods/show_goods");
                 return mv;
-            } default: {
+            }
+            default: {
                 mv.setViewName("goods/show_goods");
                 return mv;
             }
