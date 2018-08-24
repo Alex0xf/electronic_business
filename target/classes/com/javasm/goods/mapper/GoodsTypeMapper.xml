@@ -7,25 +7,30 @@
     <result column="type_name" property="typeName" jdbcType="VARCHAR" />
     <result column="type_describe" property="typeDescribe" jdbcType="VARCHAR" />
   </resultMap>
+
   <sql id="Base_Column_List" >
     id, bid, type_name, type_describe
   </sql>
+
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     from t_goodstype
     where id = #{id,jdbcType=INTEGER}
   </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from t_goodstype
     where id = #{id,jdbcType=INTEGER}
   </delete>
+
   <insert id="insert" parameterType="com.javasm.goods.model.GoodsType" >
     insert into t_goodstype (id, bid, type_name, 
       type_describe)
     values (#{id,jdbcType=INTEGER}, #{bid,jdbcType=INTEGER}, #{typeName,jdbcType=VARCHAR}, 
       #{typeDescribe,jdbcType=VARCHAR})
   </insert>
+
   <insert id="insertSelective" parameterType="com.javasm.goods.model.GoodsType" >
     insert into t_goodstype
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -57,6 +62,7 @@
       </if>
     </trim>
   </insert>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.javasm.goods.model.GoodsType" >
     update t_goodstype
     <set >

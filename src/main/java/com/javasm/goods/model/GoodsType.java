@@ -9,6 +9,32 @@ public class GoodsType {
 
     private String typeDescribe;
 
+    public GoodsType() {
+    }
+
+    public GoodsType(Integer id, Integer bid, String typeName, String typeDescribe) {
+        this.id = id;
+        this.bid = bid;
+        this.typeName = typeName;
+        this.typeDescribe = typeDescribe;
+    }
+
+    public GoodsType(Integer id, String typeName, String typeDescribe) {
+        this.id = id;
+        this.typeName = typeName;
+        this.typeDescribe = typeDescribe;
+    }
+
+    @Override
+    public String toString() {
+        return "GoodsType{" +
+                "id=" + id +
+                ", bid=" + bid +
+                ", typeName='" + typeName + '\'' +
+                ", typeDescribe='" + typeDescribe + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }

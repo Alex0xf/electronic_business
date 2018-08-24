@@ -48,6 +48,7 @@
 </div>
 
 <script src="/layui/js/layui.js"></script>
+<script src="/js/goods.js"></script>
 <script type="text/javascript">
     //JavaScript代码区域
     layui.use(['layer', 'form', 'element', 'table', 'laypage'], function () {
@@ -62,9 +63,18 @@
     });
 
 
-    function jumpToFristProductPage() {
+   /* function jumpToFristProductPage() {
         window.location.href="goods/first_product";
     }
+    function jumpToFristGoodsPage() {
+        window.location.href="goods/first_goods";
+    }
+    function jumpToGoodsBrandPage() {
+        window.location.href="goods/goods_brand";
+    }
+    function jumpToGoodsTypePage() {
+        window.location.href="goods/goods_type";
+    }*/
 </script>
 </body>
 </html>

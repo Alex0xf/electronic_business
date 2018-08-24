@@ -1,5 +1,6 @@
 package com.javasm.goods.action;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageInfo;
 import com.javasm.goods.model.GoodsType;
 import com.javasm.goods.service.IGoodsTypeService;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -43,5 +45,76 @@ public class GoodsTypeHandler {
         return resultMap;
     }
 
+    //按id删除商品类型
+    @RequestMapping("del_goods_type")
+    public ModelAndView jumpDeleteGoodsPage(HttpServletRequest request) {
+        ModelAndView mv=new ModelAndView();
+        int i,delId= 0;
+        //delId = Integer.parseInt(request.getParameter("deleteId"));
+        try {
+            delId = Integer.parseInt(request.getParameter("deleteId"));
+        } catch (NumberFormatException e) {
+            log.debug("deleteId未获取到");
+        }
+        if(delId>0){
+            log.debug(delId);
+            i=goodsTypeService.deleteByPrimaryKey(delId);
+            if(i>0){
+                mv.addObject("mssg","删除成功");
+                log.debug("删除成功");
+            }else{
+                mv.addObject("mssg","删除失败");
+                log.debug("删除失败");
+            }
+        }
+        mv.setViewName("goods/show_goods_type");
+        return mv;
+    }
+    //修改商品类型信息
 
+    @RequestMapping("update_goods_type")
+    public ModelAndView jumpUpdateGoodsPage(HttpServletRequest request) {
+        ModelAndView mv=new ModelAndView();
+        Object type= null;
+        String jumpPage=request.getParameter("jumpPage");
+        log.debug("jumpPage:xxxx   "+jumpPage);
+        int i=0;
+        switch (jumpPage){
+            case "update_goods_type":{
+                //跳转到更新类型属性页面 将当前类型id的属性传过去
+                try {
+                    type = JSON.parseObject(request.getParameter("goodsType"));
+                } catch (Exception e) {
+                    log.debug("request.getParameter(\"goodsType\")为空");
+                }
+                mv.addObject("goodsType",type);
+                mv.setViewName("goods/update_goods_type");
+                return mv;
+            } case "update_goods_type_check":{
+                //验证更新的类型属性是否合法
+                //拿值
+                int goodsTypeId=Integer.parseInt(request.getParameter("goodsType_id"));
+                String goodsType_typeName=request.getParameter("goodsType_typeName");
+                String goodsType_typeDescribe=request.getParameter("goodsType_typeDescribe");
+                //如果合法 更新
+                GoodsType goodsType=new GoodsType(goodsTypeId,goodsType_typeName,goodsType_typeDescribe);
+                i=goodsTypeService.updateByPrimaryKeySelective(goodsType);
+                if(i>0){
+                    mv.addObject("mssg","更新成功");
+                    log.debug("更新成功");
+                }else{
+                    mv.addObject("mssg","更新失败");
+                    log.debug("更新失败");
+                }
+                mv.setViewName("goods/show_goods_type");
+                return mv;
+            }
+            default: {
+                mv.setViewName("goods/show_goods_type");
+                return mv;
+            }
+        }
+
+
+    }
 }

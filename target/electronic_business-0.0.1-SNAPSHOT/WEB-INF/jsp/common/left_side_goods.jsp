@@ -17,13 +17,13 @@
             <li class="layui-nav-item">
                 <a href="javascript:;">商品管理</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:;">查询商品</a></dd>
+                    <dd><a href="javascript:void (0);" onclick="jumpToFristGoodsPage();">查询商品</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href="">商品品牌管理</a></li>
-            <li class="layui-nav-item"><a href="">商品类型管理</a></li>
-            <li class="layui-nav-item"><a href="">价格调整管理</a></li>
-            <li class="layui-nav-item"><a href="">价格调整审核</a></li>
+            <li class="layui-nav-item"><a href="javascript:void (0);" onclick="jumpToGoodsBrandPage();">商品品牌管理</a></li>
+            <li class="layui-nav-item"><a href="javascript:void (0);" onclick="jumpToGoodsTypePage();">商品类型管理</a></li>
+            <li class="layui-nav-item"><a href="javascript:void (0);" >价格调整管理</a></li>
+            <li class="layui-nav-item"><a href="javascript:void (0);">价格调整审核</a></li>
         </ul>
     </div>
 </div>
