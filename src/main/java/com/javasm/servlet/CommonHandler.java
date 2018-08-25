@@ -22,4 +22,10 @@ public class CommonHandler {
         return "common/left_side_goods";
     }
 
+    @RequestMapping("left_side_user")
+    public String ajaxSystemLeftPage(HttpServletRequest request, Model model) {
+
+        return "common/left_side_user";
+    }
+
 }

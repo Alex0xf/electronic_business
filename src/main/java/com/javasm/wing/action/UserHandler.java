@@ -32,7 +32,7 @@ public class UserHandler {
 
     @RequestMapping("login")
     public String login(){
-        return "index";
+        return "userIndex";
     }
 
 //    查出所有用户信息,还没有分页(点击用户管理)

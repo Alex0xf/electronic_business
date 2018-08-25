@@ -19,7 +19,16 @@
         </li>
         <li class="layui-nav-item"><a href="">B2C销售管理</a></li>
         <li class="layui-nav-item"><a href="">售后管理</a></li>
-        <li class="layui-nav-item"><a href="">系统管理</a></li>
+        <li class="layui-nav-item">
+            <a href="javascript:void (0);"onclick= "jumpToUserPage();">系统管理</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:void (0);">用户管理</a></dd>
+                <dd><a href="javascript:void (0);">角色管理</a></dd>
+                <dd><a href="javascript:void (0);">权限管理</a></dd>
+                <dd><a href="javascript:void (0);">IP访问限制管理</a></dd>
+                <dd><a href="javascript:void (0);">日志查询</a></dd>
+            </dl>
+        </li>
         <li class="layui-nav-item">
             <a href="javascript:;">其它系统</a>
             <dl class="layui-nav-child">

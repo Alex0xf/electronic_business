@@ -33,7 +33,9 @@
     <%@include file="header.jsp" %>
 
     <!-- 左侧导航区域（可配合已有的头部文件） -->
-    <%@include file="left_side_goods.jsp" %>
+    <div id="ajax_left_side">
+    <%@include file="common/left_side_user.jsp" %>
+    </div>
 
     <div class="layui-body">
         <div style="padding: 15px;">
@@ -51,9 +53,10 @@
     <%@include file="footer.jsp" %>
 </div>
 
-</body>
+
 <script src="layui/layui.js" type="text/javascript"></script>
 <script src="layui/layui.all.js" type="text/javascript"></script>
+
 <script>
     //一般直接写在一个js文件中
     layui.use(['layer', 'form', 'element', 'table', 'laypage'], function () {
@@ -63,7 +66,6 @@
             , table = layui.table
             , laypage = layui.laypage;
 
-        layer.msg('欢迎登陆');
     });
 </script>
 <script type="text/javascript">
@@ -78,6 +80,7 @@
 
 
 </script>
+<script src="/js/goods.js"></script>
 <script type="text/javascript">
     function addUser() {
         var url = "user/addUser";
@@ -126,4 +129,5 @@
     }
 
 </script>
+</body>
 </html>

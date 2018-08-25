@@ -149,7 +149,7 @@
     <%@include file="../common/footer.jsp"%>
 
 </div>
-<script src="/layui/js/layui.js"></script>
+
 <script>
     //把需要用到的模块先加载
     layui.use(['layer', 'form', 'element'], function(){

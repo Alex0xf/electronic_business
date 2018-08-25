@@ -6,12 +6,13 @@ function changeLeftSideToGifts(){
     },"html")
 
 }
+
 function changeLeftSideToGoods(){
     $.post('common/left_side_goods',{}, function(data) {
         $('#ajax_left_side').html(data);
     },"html")
-
 }
+
     function jumpToFristProductPage() {
     window.location.href="goods/first_product"
 }
@@ -25,3 +26,6 @@ function changeLeftSideToGoods(){
     window.location.href="goods/goods_type"
 }
 
+function jumpToUserPage() {
+    window.location.href="user/login"
+}
