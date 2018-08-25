@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javasm.wing.dao.RoseMapper">
+    <resultMap id="BaseResultMap" type="com.javasm.wing.model.Rose">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="rose_id" property="roseId" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="description" property="description" jdbcType="VARCHAR"/>
+        <result column="state" property="state" jdbcType="VARCHAR"/>
+        <result column="rose_dept" property="roseDept" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <resultMap id="RoseAndPowerMap" type="com.javasm.wing.model.Rose">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="rose_id" property="roseId" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="description" property="description" jdbcType="VARCHAR"/>
+        <result column="state" property="state" jdbcType="VARCHAR"/>
+        <result column="rose_dept" property="roseDept" jdbcType="BIGINT"/>
+        <collection property="powerSet" ofType="com.javasm.wing.model.Power" >
+            <id column="power_id" property="id" jdbcType="BIGINT" />
+            <result column="power_name" property="name" jdbcType="VARCHAR" />
+            <result column="power_description" property="description" jdbcType="CHAR" />
+            <result column="power_state" property="state" jdbcType="INTEGER" />
+            <result column="operation" property="operation" jdbcType="BIGINT" />
+        </collection>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, rose_id, name, description, state, rose_dept
+  </sql>
+    <!--自增方法-->
+    <select id="selectAllRose" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from wing_rose
+    </select>
+    <select id="selectAllRoseAndPower" resultMap="RoseAndPowerMap">
+        SELECT t1.id, t1.rose_id, t1.name, t1.description, t1.state, t1.rose_dept,t3.id as power_id,t3.name as power_name,t3.description as power_description,
+        t3.state as power_state ,operation FROM wing_rose t1 , wing_rose_power_mapping t2 LEFT JOIN wing_power t3
+        ON t3.id = t2.power WHERE t1.id = t2.rose
+  </select>
+    <select id="selectByName" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from wing_rose
+    </select>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List"/>
+        from wing_rose
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from wing_rose
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+    <insert id="insert" parameterType="com.javasm.wing.model.Rose">
+    insert into wing_rose (id, rose_id, name, 
+      description, state, rose_dept
+      )
+    values (#{id,jdbcType=BIGINT}, #{roseId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{description,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{roseDept,jdbcType=BIGINT}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.javasm.wing.model.Rose">
+        insert into wing_rose
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="roseId != null">
+                rose_id,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+            <if test="state != null">
+                state,
+            </if>
+            <if test="roseDept != null">
+                rose_dept,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="roseId != null">
+                #{roseId,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                #{description,jdbcType=VARCHAR},
+            </if>
+            <if test="state != null">
+                #{state,jdbcType=VARCHAR},
+            </if>
+            <if test="roseDept != null">
+                #{roseDept,jdbcType=BIGINT},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.javasm.wing.model.Rose">
+        update wing_rose
+        <set>
+            <if test="roseId != null">
+                rose_id = #{roseId,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="description != null">
+                description = #{description,jdbcType=VARCHAR},
+            </if>
+            <if test="state != null">
+                state = #{state,jdbcType=VARCHAR},
+            </if>
+            <if test="roseDept != null">
+                rose_dept = #{roseDept,jdbcType=BIGINT},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.javasm.wing.model.Rose">
+    update wing_rose
+    set rose_id = #{roseId,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      state = #{state,jdbcType=VARCHAR},
+      rose_dept = #{roseDept,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

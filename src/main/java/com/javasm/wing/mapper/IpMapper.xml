@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javasm.wing.dao.IpMapper" >
+  <resultMap id="BaseResultMap" type="com.javasm.wing.model.Ip" >
+  <id column="id" property="id" jdbcType="BIGINT" />
+  <result column="name" property="name" jdbcType="BIGINT" />
+  <result column="ip_head" property="ipHead" jdbcType="VARCHAR" />
+  <result column="ip_end" property="ipEnd" jdbcType="VARCHAR" />
+  <result column="description" property="description" jdbcType="VARCHAR" />
+  <result column="employee" property="employee" jdbcType="BIGINT" />
+  <result column="state" property="state" jdbcType="INTEGER" />
+</resultMap>
+  <resultMap id="IpEmployeeDeptMap" type="com.javasm.wing.model.Ip" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="BIGINT" />
+    <result column="ip_head" property="ipHead" jdbcType="VARCHAR" />
+    <result column="ip_end" property="ipEnd" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="employee" property="employee" jdbcType="BIGINT" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <association property="dept" javaType="com.javasm.wing.model.Dept" select="com.javasm.wing.dao.DeptMapper.selectByPrimaryKey"
+                 column="name" autoMapping="true">
+    </association>
+    <association property="employeeModel" javaType="com.javasm.wing.model.Employee" select="com.javasm.wing.dao.EmployeeMapper.selectByPrimaryKey"
+                 column="employee" autoMapping="true">
+    </association>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, ip_head, ip_end, description, employee, state
+  </sql>
+  <!--自增方法-->
+  <select id="selectByEmployeeId" resultMap="BaseResultMap" >
+    select * from wing_ip where id= #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAllIp" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from wing_ip
+  </select>
+  <select id="selectAllIpEmployeeDept" resultMap="IpEmployeeDeptMap">
+    select
+    <include refid="Base_Column_List" />
+    from wing_ip
+  </select>
+  <!--end-->
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from wing_ip
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from wing_ip
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.javasm.wing.model.Ip" >
+    insert into wing_ip (id, name, ip_head, 
+      ip_end, description, employee, 
+      state)
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=BIGINT}, #{ipHead,jdbcType=VARCHAR}, 
+      #{ipEnd,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{employee,jdbcType=BIGINT}, 
+      #{state,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.javasm.wing.model.Ip" >
+    insert into wing_ip
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="ipHead != null" >
+        ip_head,
+      </if>
+      <if test="ipEnd != null" >
+        ip_end,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+      <if test="employee != null" >
+        employee,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=BIGINT},
+      </if>
+      <if test="ipHead != null" >
+        #{ipHead,jdbcType=VARCHAR},
+      </if>
+      <if test="ipEnd != null" >
+        #{ipEnd,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="employee != null" >
+        #{employee,jdbcType=BIGINT},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.javasm.wing.model.Ip" >
+    update wing_ip
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=BIGINT},
+      </if>
+      <if test="ipHead != null" >
+        ip_head = #{ipHead,jdbcType=VARCHAR},
+      </if>
+      <if test="ipEnd != null" >
+        ip_end = #{ipEnd,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="employee != null" >
+        employee = #{employee,jdbcType=BIGINT},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.javasm.wing.model.Ip" >
+    update wing_ip
+    set name = #{name,jdbcType=BIGINT},
+      ip_head = #{ipHead,jdbcType=VARCHAR},
+      ip_end = #{ipEnd,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      employee = #{employee,jdbcType=BIGINT},
+      state = #{state,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
