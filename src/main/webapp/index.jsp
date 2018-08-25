@@ -26,7 +26,9 @@
     <%@include file="WEB-INF/jsp/common/header.jsp"%>
 
     <!-- 左侧导航区域（可配合已有的头部文件） -->
+    <div id="ajax_left_side">
     <%@include file="WEB-INF/jsp/common/left_side_goods.jsp"%>
+    </div>
 
     <div class="layui-body">
         <div style="padding: 15px;">
@@ -48,7 +50,10 @@
 </div>
 
 <script src="/layui/js/layui.js"></script>
-<script src="/js/goods.js"></script>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.form.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
     //JavaScript代码区域
     layui.use(['layer', 'form', 'element', 'table', 'laypage'], function () {
@@ -61,20 +66,7 @@
 
         layer.msg('欢迎您');
     });
-
-
-   /* function jumpToFristProductPage() {
-        window.location.href="goods/first_product";
-    }
-    function jumpToFristGoodsPage() {
-        window.location.href="goods/first_goods";
-    }
-    function jumpToGoodsBrandPage() {
-        window.location.href="goods/goods_brand";
-    }
-    function jumpToGoodsTypePage() {
-        window.location.href="goods/goods_type";
-    }*/
 </script>
+<script src="js/goods.js" type="text/javascript"></script>
 </body>
 </html>

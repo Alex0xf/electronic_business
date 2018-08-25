@@ -28,7 +28,9 @@
     <%@include file="../common/header.jsp" %>
 
     <!-- 左侧导航区域（可配合已有的头部文件） -->
+    <div id="ajax_left_side">
     <%@include file="../common/left_side_goods.jsp" %>
+    </div>
 
     <!-- 内容主体区域 -->
     <div class="layui-body">
@@ -99,6 +101,9 @@
         $(function () {
             //页面一开始就加载表格
             loadAllFirstGoods();
+            if("${mssg}"!=""){
+                alert('${mssg}');
+            }
         });
 
         function loadAllFirstGoods() {

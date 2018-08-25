@@ -12,9 +12,9 @@
     <ul class="layui-nav layui-layout-left">
         <li class="layui-nav-item"><a href="">商品与赠品管理</a>
             <dl class="layui-nav-child">
-                <dd><a href="">商品管理</a></dd>
-                <dd><a href="">赠品管理</a></dd>
-                <dd><a href="">活动商品管理</a></dd>
+                <dd><a href="javascript:void (0);" onclick= "changeLeftSideToGoods();">商品管理</a></dd>
+                <dd><a href="javascript:void (0);" onclick= "changeLeftSideToGifts();">赠品管理</a></dd>
+                <dd><a href="javascript:void (0);" >活动商品管理</a></dd>
             </dl>
         </li>
         <li class="layui-nav-item"><a href="">B2C销售管理</a></li>

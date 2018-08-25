@@ -63,8 +63,7 @@
                 <div class="form-group">
                     <label>是否可采购</label>
                    <h1>
-                       <input type="text" class="form-control" name="num" readonly="readonly" value="<c:if test="${firstGoods.isBuy==0}">可采购</c:if>
-                      <c:if test="${firstGoods.isBuy!=0}">不可采购</c:if>
+                       <input type="text" class="form-control" name="num" readonly="readonly" value="<c:if test="${firstGoods.isBuy==0}">可采购</c:if><c:if test="${firstGoods.isBuy!=0}">不可采购</c:if>
                     ">
                    </h1>
                 </div>

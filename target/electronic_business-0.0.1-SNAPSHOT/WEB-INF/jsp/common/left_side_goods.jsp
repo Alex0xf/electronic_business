@@ -11,8 +11,7 @@
 
         <ul class="layui-nav layui-nav-tree" lay-filter="test">
             <li class="layui-nav-item layui-nav-itemed">
-               <%-- <a class="" href="javascript:void (0);" onclick="loadAllProduct();">产品查询</a>--%>
-                <a class="" href="javascript:void (0);" onclick="jumpToFristProductPage();">产品查询</a>
+                <a class="" href="javascript:void (0);" onclick="jumpToFristProductPage();">一类产品列表</a>
 
             <li class="layui-nav-item">
                 <a href="javascript:;">商品管理</a>
