@@ -9141,3 +9141,121 @@
 00:35:20.225 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT t1.id,t1.name,t1.description,t1.state,operation,t3.id rose_key_id,rose_id,t3.name rose_name, t3.description rose_description,t3.state rose_state,rose_dept FROM wing_power t1 ,wing_rose_power_mapping t2, wing_rose t3 WHERE t1.id = t2.power and t3.id = t2.rose LIMIT 1 
 00:35:20.226 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
 00:35:20.231 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:43:28.842 DEBUG org.apache.ibatis.logging.LogFactory 135 setImplementation - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+10:51:37.611 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+10:51:37.626 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:51:37.673 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:51:37.673 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+10:51:37.673 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:51:37.689 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+10:59:09.227 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+10:59:09.228 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:09.230 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:09.232 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+10:59:09.232 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:09.238 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+10:59:11.181 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+10:59:11.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:11.183 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:11.184 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5,5 
+10:59:11.184 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:11.187 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+10:59:11.707 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+10:59:11.708 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:11.710 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:11.710 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 10,5 
+10:59:11.711 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:11.714 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 2
+10:59:15.086 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+10:59:15.087 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:15.089 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:15.090 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3 
+10:59:15.091 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:15.092 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+10:59:16.130 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+10:59:16.130 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:16.134 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:16.135 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 3 
+10:59:16.136 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:16.139 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+10:59:21.858 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM wing_employee 
+10:59:21.859 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:21.862 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:21.863 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from wing_employee LIMIT 1 
+10:59:21.863 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:21.866 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select * from wing_user where employee_id=? 
+10:59:21.867 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(BigDecimal)
+10:59:21.871 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+10:59:21.872 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select id, rose_id, name, description, state, rose_dept from wing_rose where id = ? 
+10:59:21.874 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 2(Long)
+10:59:21.894 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+10:59:21.894 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select * from wing_ip where id= ? 
+10:59:21.894 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(BigDecimal)
+10:59:21.894 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select id, job, father_id from wing_job where id = ? 
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(Integer)
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select id, name, father_id from wing_dept where id = ? 
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 1(Long)
+10:59:21.909 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:23.218 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM wing_rose t1, wing_rose_power_mapping t2 LEFT JOIN wing_power t3 ON t3.id = t2.power WHERE t1.id = t2.rose 
+10:59:23.218 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:23.255 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:23.255 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT t1.id, t1.rose_id, t1.name, t1.description, t1.state, t1.rose_dept,t3.id as power_id,t3.name as power_name,t3.description as power_description, t3.state as power_state ,operation FROM wing_rose t1 , wing_rose_power_mapping t2 LEFT JOIN wing_power t3 ON t3.id = t2.power WHERE t1.id = t2.rose LIMIT 1 
+10:59:23.255 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:23.255 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:24.135 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM wing_power t1, wing_rose_power_mapping t2, wing_rose t3 WHERE t1.id = t2.power AND t3.id = t2.rose 
+10:59:24.136 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:24.139 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:24.139 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT t1.id,t1.name,t1.description,t1.state,operation,t3.id rose_key_id,rose_id,t3.name rose_name, t3.description rose_description,t3.state rose_state,rose_dept FROM wing_power t1 ,wing_rose_power_mapping t2, wing_rose t3 WHERE t1.id = t2.power and t3.id = t2.rose LIMIT 1 
+10:59:24.140 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:24.141 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:25.130 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM wing_ip 
+10:59:25.131 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:25.132 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:25.132 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select id, name, ip_head, ip_end, description, employee, state from wing_ip LIMIT 1 
+10:59:25.133 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:25.134 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select id, name, father_id from wing_dept where id = ? 
+10:59:25.135 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(Long)
+10:59:25.137 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+10:59:25.139 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select id, employee_id, name, sex, job, rose from wing_employee where id = ? 
+10:59:25.140 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(Long)
+10:59:25.142 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+10:59:25.143 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:49.097 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_first_product AS fp, t_goodsbrand AS b WHERE fp.bid = b.id 
+10:59:49.098 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:49.099 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:49.100 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_first_product AS fp,t_goodsbrand AS b WHERE fp.bid=b.id LIMIT 5 
+10:59:49.100 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:49.103 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 5
+10:59:52.849 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsbrand 
+10:59:52.849 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:52.851 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:52.851 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsbrand LIMIT 3 
+10:59:52.852 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:52.853 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+10:59:54.042 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM t_goodsType 
+10:59:54.042 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:54.044 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+10:59:54.044 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select * from t_goodsType LIMIT 3 
+10:59:54.045 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+10:59:54.046 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 3
+11:00:01.533 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM wing_rose t1, wing_rose_power_mapping t2 LEFT JOIN wing_power t3 ON t3.id = t2.power WHERE t1.id = t2.rose 
+11:00:01.534 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+11:00:01.535 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+11:00:01.536 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT t1.id, t1.rose_id, t1.name, t1.description, t1.state, t1.rose_dept,t3.id as power_id,t3.name as power_name,t3.description as power_description, t3.state as power_state ,operation FROM wing_rose t1 , wing_rose_power_mapping t2 LEFT JOIN wing_power t3 ON t3.id = t2.power WHERE t1.id = t2.rose LIMIT 1 
+11:00:01.537 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+11:00:01.540 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+11:00:02.477 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: SELECT count(0) FROM wing_ip 
+11:00:02.478 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+11:00:02.480 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1
+11:00:02.481 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==>  Preparing: select id, name, ip_head, ip_end, description, employee, state from wing_ip LIMIT 1 
+11:00:02.482 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ==> Parameters: 
+11:00:02.483 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select id, name, father_id from wing_dept where id = ? 
+11:00:02.484 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(Long)
+11:00:02.485 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+11:00:02.487 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====>  Preparing: select id, employee_id, name, sex, job, rose from wing_employee where id = ? 
+11:00:02.489 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - ====> Parameters: 1(Long)
+11:00:02.491 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <====      Total: 1
+11:00:02.492 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 142 debug - <==      Total: 1

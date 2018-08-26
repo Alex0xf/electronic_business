@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javasm.wing.dao.Rose_PowerMapper" >
+  <resultMap id="BaseResultMap" type="com.javasm.wing.model.Rose_Power" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="rose" property="rose" jdbcType="BIGINT" />
+    <result column="power" property="power" jdbcType="BIGINT" />
+  </resultMap>
+
+  <resultMap id="RoseAndPowerMap" type="com.javasm.wing.model.Rose_Power" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="rose" property="rose" jdbcType="BIGINT" />
+    <result column="power" property="power" jdbcType="BIGINT" />
+    <association property="powerModel" javaType="com.javasm.wing.model.Power" select="com.javasm.wing.dao.PowerMapper.selectByPrimaryKey"
+                 column="power" autoMapping="true">
+    </association>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, rose, power
+  </sql>
+
+  <!--自增方法-->
+  <select id="selectByRose" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from wing_rose_power_mapping
+    where rose = #{rose,jdbcType=BIGINT}
+  </select>
+  <select id="selectRoseAndPower" resultMap="RoseAndPowerMap">
+    select
+    <include refid="Base_Column_List" />
+    from wing_rose_power_mapping
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from wing_rose_power_mapping
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from wing_rose_power_mapping
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.javasm.wing.model.Rose_Power" >
+    insert into wing_rose_power_mapping (id, rose, power
+      )
+    values (#{id,jdbcType=INTEGER}, #{rose,jdbcType=BIGINT}, #{power,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.javasm.wing.model.Rose_Power" >
+    insert into wing_rose_power_mapping
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="rose != null" >
+        rose,
+      </if>
+      <if test="power != null" >
+        power,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="rose != null" >
+        #{rose,jdbcType=BIGINT},
+      </if>
+      <if test="power != null" >
+        #{power,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.javasm.wing.model.Rose_Power" >
+    update wing_rose_power_mapping
+    <set >
+      <if test="rose != null" >
+        rose = #{rose,jdbcType=BIGINT},
+      </if>
+      <if test="power != null" >
+        power = #{power,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.javasm.wing.model.Rose_Power" >
+    update wing_rose_power_mapping
+    set rose = #{rose,jdbcType=BIGINT},
+      power = #{power,jdbcType=BIGINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

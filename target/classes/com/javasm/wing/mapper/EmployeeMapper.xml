@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javasm.wing.dao.EmployeeMapper" >
+  <resultMap id="BaseResultMap" type="com.javasm.wing.model.Employee" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="employee_id" property="employeeId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="job" property="job" jdbcType="INTEGER" />
+    <result column="rose" property="rose" jdbcType="BIGINT" />
+  </resultMap>
+  <!--联表查询全部信息-->
+  <resultMap id="AllInfoMap" type="com.javasm.wing.model.Employee" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="employee_id" property="employeeId" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="job" property="job" jdbcType="INTEGER" />
+    <result column="rose" property="rose" jdbcType="BIGINT" />
+    <association property="user" javaType="com.javasm.wing.model.User" select="com.javasm.wing.dao.UserMapper.selectByEmployeeId"
+                 column="employee_id" autoMapping="true">
+
+    </association>
+    <association property="rose_map" javaType="com.javasm.wing.model.Rose" select="com.javasm.wing.dao.RoseMapper.selectByPrimaryKey"
+                 column="rose" autoMapping="true">
+    </association>
+    <association property="ip"  javaType="com.javasm.wing.model.Ip" select="com.javasm.wing.dao.IpMapper.selectByEmployeeId"
+                 column="id" autoMapping="true" >
+    </association>
+    <association property="job_map" javaType="com.javasm.wing.model.Job" select="com.javasm.wing.dao.JobMapper.selectByPrimaryKey"
+                 column="job" autoMapping="true">
+    </association>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, employee_id, name, sex, job, rose
+  </sql>
+  <!--自增方法-->
+  <select id="selectAllEmployee" resultMap="BaseResultMap">
+    select * from wing_employee
+  </select>
+  <select id="selectAllInfo"   resultMap="AllInfoMap">
+    select * from wing_employee
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from wing_employee
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from wing_employee
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.javasm.wing.model.Employee" >
+    insert into wing_employee (id, employee_id, name, 
+      sex, job, rose)
+    values (#{id,jdbcType=BIGINT}, #{employeeId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=INTEGER}, #{job,jdbcType=INTEGER}, #{rose,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.javasm.wing.model.Employee" >
+    insert into wing_employee
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="employeeId != null" >
+        employee_id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="job != null" >
+        job,
+      </if>
+      <if test="rose != null" >
+        rose,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="employeeId != null" >
+        #{employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="job != null" >
+        #{job,jdbcType=INTEGER},
+      </if>
+      <if test="rose != null" >
+        #{rose,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.javasm.wing.model.Employee" >
+    update wing_employee
+    <set >
+      <if test="employeeId != null" >
+        employee_id = #{employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="job != null" >
+        job = #{job,jdbcType=INTEGER},
+      </if>
+      <if test="rose != null" >
+        rose = #{rose,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.javasm.wing.model.Employee" >
+    update wing_employee
+    set employee_id = #{employeeId,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=INTEGER},
+      job = #{job,jdbcType=INTEGER},
+      rose = #{rose,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+</mapper>

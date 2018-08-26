@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javasm.wing.dao.JobMapper" >
+  <resultMap id="BaseResultMap" type="com.javasm.wing.model.Job" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="job" property="job" jdbcType="VARCHAR" />
+    <result column="father_id" property="fatherId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, job, father_id
+  </sql>
+  <!--自增方法-->
+  <select id="selectAllJob" resultMap="BaseResultMap">
+    select * from  wing_job
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from wing_job
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from wing_job
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.javasm.wing.model.Job" >
+    insert into wing_job (id, job, father_id
+      )
+    values (#{id,jdbcType=INTEGER}, #{job,jdbcType=VARCHAR}, #{fatherId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.javasm.wing.model.Job" >
+    insert into wing_job
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="job != null" >
+        job,
+      </if>
+      <if test="fatherId != null" >
+        father_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="job != null" >
+        #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="fatherId != null" >
+        #{fatherId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.javasm.wing.model.Job" >
+    update wing_job
+    <set >
+      <if test="job != null" >
+        job = #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="fatherId != null" >
+        father_id = #{fatherId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.javasm.wing.model.Job" >
+    update wing_job
+    set job = #{job,jdbcType=VARCHAR},
+      father_id = #{fatherId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
